@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "Inter";
+    src: url(../fonts/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+@font-face {
+    font-family: "Sora";
+    src: url(../fonts/Sora-VariableFont_wght.ttf);
+}
+
+@theme{
+    --font-primary:"Inter";
+    --font-secondary:"Sora";
+    --color-nav: #F8F9FF;
+    --color-nav-link: #414843;
+    --color-button-nav: #3E644F;
+    --color-white: #FFFFFF;
+    --breakpoint-xs: 400px;
+}
+
+@layer base{
+    body{
+        font-family: var(--font-primary);
+    }
+    .container{
+        @apply mx-auto;
+        @apply px-6;
+        @apply md:px-0;
+    }
+    button{
+        cursor: pointer;
+    }
+}
+
+@utility row{
+    @apply flex items-center
+}
+
+@utility nav-link{
+    @apply uppercase text-xs leading-3 font-semibold  text-nav-link tracking-[0.6px]
+}
+
+@utility nav-button{
+    @apply bg-button-nav py-2.5 px-6 rounded-[9999px] shadow-[0px_1px_2px_0px_#0000000D]
+}
+
+@utility nav-button-text{
+    @apply text-xs leading-3 font-semibold tracking-[1.2px] text-white text-center uppercase
+}
+
+@utility image-profile{
+    @apply rounded-[9999px] border-2 border-solid border-[#3E644F33]/20
+}
