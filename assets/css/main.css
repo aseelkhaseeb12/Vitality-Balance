@@ -110,7 +110,7 @@
 }
 
 @utility footer-links{
-    @apply pt-0.5 pb-px text-[14px] leading-5.25 text-nav-link 
+    @apply pt-0.5 pb-px text-[14px] leading-5.25 text-nav-link hover:text-third hover:underline transition-all duration-150
 }
 
 @utility footer-input{

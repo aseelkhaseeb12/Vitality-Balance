@@ -116,14 +116,78 @@
                         </p>
                     </form>
                 </div>
-                <div class="hidden md:row justify-center gap-6 text-center">
+                <div class="col gap-4 lg:hidden">
+                    <p class="pt-4 text-center text-[16px] leading-6 text-nav-link">
+                        Already have an account?
+                        <a href="./login.html" class="text-third hover:underline">Log In</a>
+                    </p>
+                    <div class="text-[12px] leading-[19.5px] text-fifth text-center">
+                        <p>
+                            By clicking "Sign Up", you agree to our 
+                            <span>
+                                <a href="#" class="underline">Terms of</a>
+                                <br/>
+                                <a href="#" class="underline">Service</a>
+                            </span>
+                            and 
+                            <span>
+                                <a href="#" class="underline">Privacy Policy.</a>
+                            </span>
+                        </p>
+                        
+                    </div>
+                </div>
+                <div class="hidden lg:row justify-center gap-6 text-center">
                     <a href="#" class="form_footer_links">terms of services</a>
                     <div class="bg-fourth w-1 h-1 rounded-[9999px]"></div>
                     <a href="#" class="form_footer_links">privacy policy</a>
                 </div>
             </div>
         </section>
-        
+        <section class="bg-seventh py-12 hidden lg:block">
+            <div class="container grid grid-cols-4 gap-4">
+                <div class="col gap-4">
+                    <div class="row gap-2">
+                        <img class="w-[10%]" src="./assets/imgs/nav_imags/Logo.svg" alt="Logo image">
+                        <img class="w-[60%]" src="./assets/imgs/nav_imags/Logo-text.svg" alt="Logo text image">
+                    </div>
+                    <div>
+                        <p class="text-[14px] leading-5.25 text-nav-link">
+                            Science-backed serenity for proactive well-being.
+                        </p>
+                    </div>
+                    <div>
+                        <p class="text-[14px] leading-5.25 text-nav-link/60">© 2024 Vitality & Balance.</p>
+                    </div>
+                </div>
+                <div class="col pb-[12.59px] gap-4">
+                    <h4 class="text-[12px] leading-3 font-semibold text-third">Company</h4>
+                    <ul class="col gap-2">
+                        <li><a href="#" class="footer-links">About Us</a></li>
+                        <li><a href="#" class="footer-links">Careers</a></li>
+                        <li><a href="#" class="footer-links">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col pb-[12.59px] gap-4">
+                    <h4 class="text-[12px] leading-3 font-semibold text-third">Resources</h4>
+                    <ul class="col gap-2">
+                        <li><a href="#" class="footer-links">Help Center</a></li>
+                        <li><a href="#" class="footer-links">Community Guidelines</a></li>
+                        <li><a href="#" class="footer-links">Science Board</a></li>
+                    </ul>
+                </div>
+                <div class="col pb-[2.59px] gap-4">
+                    <h4 class="text-[12px] leading-3 font-semibold text-third">Newsletter</h4>
+                    <p class="text-[14px] leading-5.25 text-nav-link">Stay updated with our weekly wellness insights.</p>
+                    <label for="email">
+                        <input type="email" name="email" id="email" class="footer-input focus:outline-none placeholder:text-eighth" placeholder="Email">
+                        <button class="bg-third p-2 rounded-lg ml-2">
+                            <img src="./assets/imgs/footer_icons/arrow.svg" alt="Arrow image">
+                        </button>
+                    </label>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 </html>
