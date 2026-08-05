@@ -17,7 +17,8 @@
     --color-nav-link: #414843;
     --color-third: #3E644F;
     --color-white: #FFFFFF;
-    --color-secondaryC: #FFDADA;
+    /* --color-secondaryC: #FFDADA; */
+    --color-secondaryC: #fbf9f1;
     --color-fourth: #C1C8C1;
     --color-fifth: #717973;
     --color-sixth: #FF8F8F;
@@ -28,8 +29,8 @@
     --color-eleventh: #0D1C2F;
     --color-twelfth: #5f8670;
     
-    --shadow-auth: 0px 4px 20px rgba(51,65,85,0.05);
-    --shadow-auth-hover: 0px 10px 30px rgba(51, 65, 85, 0.12);
+    --shadow-first: 0px 4px 20px rgba(51,65,85,0.05);
+    --shadow-second: 0px 10px 30px rgba(51, 65, 85, 0.12);
     
     --breakpoint-xs: 400px;
 }
@@ -53,9 +54,9 @@
 @utility col{
     @apply flex flex-col
 }
-
+/*start Navbar section styles*/
 @utility nav-link{
-    @apply uppercase text-xs leading-3 font-semibold  text-nav-link hover:text-third transition-all duration-150 tracking-[0.6px]
+    @apply text-xs leading-3 font-semibold tracking-[0.6px] row text-nav-link hover:text-third transition-all duration-150
 }
 
 @utility nav-button{
@@ -63,15 +64,16 @@
 }
 
 @utility nav-button-text{
-    @apply text-xs leading-3 font-semibold tracking-[1.2px] text-white text-center uppercase
+    @apply text-xs leading-3 font-semibold tracking-[1.2px] text-white text-center
 }
 
 @utility image-profile{
     @apply rounded-full border-2 border-solid border-third/20
 }
-
+/*end Navbar section styles*/
+/*start Register form section styles*/
 @utility auth-card{
-    @apply bg-white flex flex-col gap-8 p-6 md:p-10 rounded-3xl shadow-auth hover:shadow-auth-hover
+    @apply bg-white flex flex-col gap-8 p-6 md:p-10 rounded-3xl shadow-first hover:shadow-second
 }
 
 @utility top-headers{
@@ -96,7 +98,7 @@
 
 @utility signUp-button{
     @apply bg-sixth py-4 rounded-xl text-[16px] md:text-[24px] leading-6 md:leading-[33.6px] font-normal md:font-semibold font-secondary text-white shadow-md hover:brightness-95 active:scale-[0.98] transition-all duration-150
-    }
+}
 
 @utility social-divider{
     @apply px-3 md:px-4 uppercase text-[12px] leading-4 tracking-[1.2px] font-semibold text-fifth md:text-nav-link
@@ -104,7 +106,8 @@
 @utility social-logins{
     @apply py-3 md:py-3.5 px-[32.1px] md:px-[51.44px] flex gap-2 md:gap-3 border border-fifth/20 rounded-xl hover:bg-seventh transition-all duration-150 active:scale-[0.98]
 }
-
+/*end Register form section styles*/
+/*start Footer section styles*/
 @utility form_footer_links{
     @apply uppercase text-[10px] leading-3.75 tracking-[1px] text-nav-link/60 hover:text-third transition-all duration-150
 }
@@ -116,3 +119,4 @@
 @utility footer-input{
     @apply py-[10.5px] px-4 text-[14px] bg-white border border-fourth/30 rounded-lg 
 }
+/*end Footer section styles*/

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitality & Balance</title>
+    <link href="./assets/css/output.css" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-nav/70 py-[22.22px] drop-shadow-sm">
+        <div class="container row justify-between">
+            <div class="row gap-2">
+                <img src="./assets/imgs/nav_imags/Menu.svg" alt="Menu image" class="flex lg:hidden">
+                <img src="./assets/imgs/nav_imags/Logo.svg" alt="Logo image" class="hidden lg:flex">
+                <a href="./index.html">
+                    <img src="./assets/imgs/nav_imags/Logo-text.svg" alt="Logo text image">
+                </a>
+            </div>
+            <nav class="hidden lg:flex">
+                <ul class="row gap-8">
+                    <li>
+                        <a href="./index.html" class="nav-link uppercase">home</a>
+                    </li>
+                    <li>
+                        <a href="./about.html" class="nav-link uppercase">about</a>
+                    </li>
+                    <li>
+                        <a href="./blog.html" class="nav-link uppercase">blog</a>
+                    </li>
+                    <li>
+                        <a href="./tools.html" class="nav-link uppercase">tools</a>
+                    </li>
+                    <li>
+                        <a href="./services.html" class="nav-link uppercase">services</a>
+                    </li>
+                    <li>
+                        <a href="./community.html" class="nav-link uppercase">community</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="row gap-4 hidden md:flex">
+                <button class="p-2">
+                    <img src="./assets/imgs/nav_imags/Search_icon.svg" alt="Search icon image">
+                </button>
+                <button class="nav-button nav-button-text bg-third uppercase">
+                    get started
+                </button>
+            </div>
+            <button class="flex md:hidden">
+                <img src="./assets/imgs/nav_imags/profile.webp" alt="profile image" class="image-profile">
+            </button>
+        </div>
+    </header>
+    <main>
+        <section class="bg-secondaryC pb-12">
+            <div class="container sm:w-120 pt-4 pb-12 mx-auto col gap-8 text-third">
+                <div class="block md:hidden col gap-1.75">
+                    <h2 class="text-[32px] leading-[38.4px] font-semibold">Create an account</h2>
+                    <p class="pb-[0.8px] text-[18px] leading-[28.8px] text-ninth/80">Start your wellness journey.</p>
+                </div>
+                <div class="auth-card">
+                    <div class="top-headers">
+                        <button class="login-button">
+                            Login
+                        </button>
+                        <button class="register-button">
+                            Register
+                        </button>
+                    </div>
+                    <form class="col gap-6">
+                        <div class="col gap-2">
+                            <label for="name" class="label-reg">Full Name</label>
+                            <div class="relative">
+                                <img class="absolute top-1/2 -translate-y-1/2 left-3.5" src="./assets/imgs/form_icons/avatar.svg" alt="avatar image">
+                                <input type="text" name="name" id="name" placeholder="Jane Doe" class="input-reg">
+                            </div>
+                        </div>
+                        <div class="col gap-2">
+                            <label for="email" class="label-reg">Email Address</label>
+                            <div class="relative">
+                                <img class="absolute top-1/2 -translate-y-1/2 left-3.5" src="./assets/imgs/form_icons/email.svg" alt="email image">
+                                <input type="text" name="email" id="email" placeholder="jane@example.com" class="input-reg">
+                            </div>
+                        </div>
+                        <div class="col gap-2">
+                            <label for="password" class="label-reg">Password</label>
+                            <div class="relative">
+                                <img class="absolute top-1/2 -translate-y-1/2 left-3.5" src="./assets/imgs/form_icons/password.svg" alt="password image">
+                                <input type="text" name="password" id="password" placeholder="••••••••" class="input-reg">
+                                <button class="absolute top-1/2 -translate-y-1/2 right-3.5">
+                                    <img src="./assets/imgs/form_icons/eye.svg" alt="eye image">
+                                </button>
+                            </div>
+                            <div class="flex gap-1.5 px-1">
+                                <img src="./assets/imgs/form_icons/warning.svg" alt="warning image">
+                                <p class="text-[11px] md:text-[12px] leading-[17.88px] md:leading-4 font-normal text-fifth md:text-nav-link/80">Must be at least 8 characters with one special symbol.</p>
+                            </div>
+                        </div>
+                        <button class="signUp-button">Sign Up</button>
+                        <div class="py-1.5 md:py-4 flex items-center justify-between">
+                            <div class="h-px bg-fourth/30 w-16 md:w-[114.14px]"></div>
+                            <p class="social-divider">or continue with</p>
+                            <div class="h-px bg-fourth/30 w-16 md:w-[114.14px]"></div>
+                        </div>
+                        <div class="flex justify-center gap-4">
+                            <button class="social-logins">
+                                <img src="./assets/imgs/form_icons/Google.svg" alt="google image">
+                                <span class="text-[14px] md:text-[16px] leading-5.25 md:leading-6 font-medium text-eleventh">Google</span>
+                            </button>
+                            <button class="social-logins">
+                                <img src="./assets/imgs/form_icons/Apple.svg" alt="apple image">
+                                <span class="text-[14px] md:text-[16px] leading-5.25 md:leading-6 font-medium text-eleventh">Apple</span>
+                            </button>
+                        </div>
+                        <p class="hidden md:block pt-4 text-center text-[16px] leading-6 text-nav-link">
+                            Already have an account?
+                            <a href="./login.html" class="text-third hover:underline">Log In</a>
+                        </p>
+                    </form>
+                </div>
+                <div class="col gap-4 lg:hidden">
+                    <p class="pt-4 text-center text-[16px] leading-6 text-nav-link">
+                        Already have an account?
+                        <a href="./login.html" class="text-third hover:underline">Log In</a>
+                    </p>
+                    <div class="text-[12px] leading-[19.5px] text-fifth text-center">
+                        <p>
+                            By clicking "Sign Up", you agree to our 
+                            <span>
+                                <a href="#" class="underline">Terms of</a>
+                                <br/>
+                                <a href="#" class="underline">Service</a>
+                            </span>
+                            and 
+                            <span>
+                                <a href="#" class="underline">Privacy Policy.</a>
+                            </span>
+                        </p>
+                        
+                    </div>
+                </div>
+                <div class="hidden lg:row justify-center gap-6 text-center">
+                    <a href="#" class="form_footer_links">terms of services</a>
+                    <div class="bg-fourth w-1 h-1 rounded-[9999px]"></div>
+                    <a href="#" class="form_footer_links">privacy policy</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-seventh py-12 hidden lg:block">
+        <div class="container grid grid-cols-4 gap-4">
+            <div class="col gap-4">
+                <div class="row gap-2">
+                    <img class="w-[10%]" src="./assets/imgs/nav_imags/Logo.svg" alt="Logo image">
+                    <img class="w-[60%]" src="./assets/imgs/nav_imags/Logo-text.svg" alt="Logo text image">
+                </div>
+                <div>
+                    <p class="text-[14px] leading-5.25 text-nav-link">
+                        Science-backed serenity for proactive well-being.
+                    </p>
+                </div>
+                <div>
+                    <p class="text-[14px] leading-5.25 text-nav-link/60">© 2024 Vitality & Balance.</p>
+                </div>
+            </div>
+            <div class="col pb-[12.59px] gap-4">
+                <h4 class="text-[12px] leading-3 font-semibold text-third">Company</h4>
+                <ul class="col gap-2">
+                    <li><a href="#" class="footer-links">About Us</a></li>
+                    <li><a href="#" class="footer-links">Careers</a></li>
+                    <li><a href="#" class="footer-links">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col pb-[12.59px] gap-4">
+                <h4 class="text-[12px] leading-3 font-semibold text-third">Resources</h4>
+                <ul class="col gap-2">
+                    <li><a href="#" class="footer-links">Help Center</a></li>
+                    <li><a href="#" class="footer-links">Community Guidelines</a></li>
+                    <li><a href="#" class="footer-links">Science Board</a></li>
+                </ul>
+            </div>
+            <div class="col pb-[2.59px] gap-4">
+                <h4 class="text-[12px] leading-3 font-semibold text-third">Newsletter</h4>
+                <p class="text-[14px] leading-5.25 text-nav-link">Stay updated with our weekly wellness insights.</p>
+                <label for="email">
+                    <input type="email" name="email" id="email" class="footer-input focus:outline-none placeholder:text-eighth" placeholder="Email">
+                    <button class="bg-third p-2 rounded-lg ml-2">
+                        <img src="./assets/imgs/footer_icons/arrow.svg" alt="Arrow image">
+                    </button>
+                </label>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
