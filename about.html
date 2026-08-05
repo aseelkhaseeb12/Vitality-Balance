@@ -10,7 +10,6 @@
     <header class="bg-nav/70 py-[22.22px] drop-shadow-xs">
         <div class="container row justify-between">
             <div class="row gap-2">
-                <img src="./assets/imgs/nav_imags/Menu.svg" alt="Menu image" class="flex lg:hidden">
                 <a href="./index.html">
                     <img src="./assets/imgs/nav_imags/Logo-text.svg" alt="Logo text image">
                 </a>
@@ -18,10 +17,10 @@
             <nav class="hidden lg:flex">
                 <ul class="row gap-6">
                     <li>
-                        <a href="./index.html" class="nav-link capitalize">home</a>
+                        <a href="./index.html" class="nav-link capitalize pb-1 border-b-2 border-b-third text-third">home</a>
                     </li>
                     <li>
-                        <a href="./about.html" class="nav-link capitalize pb-1 border-b-2 border-b-third text-third">about</a>
+                        <a href="./about.html" class="nav-link capitalize">about</a>
                     </li>
                     <li>
                         <a href="./blog.html" class="nav-link capitalize">blog</a>
@@ -37,17 +36,17 @@
                     </li>
                 </ul>
             </nav>
-            <div class="row gap-4 hidden md:flex">
+            <div class="row gap-4">
                 <button class="p-2">
                     <img src="./assets/imgs/nav_imags/Search_icon.svg" alt="Search icon image">
                 </button>
-                <button class="nav-button nav-button-text capitalize">
+                <button class="nav-button nav-button-text capitalize hidden lg:flex">
                     get started
                 </button>
+                <button>
+                    <img src="./assets/imgs/nav_imags/Menu.svg" alt="Menu image" class="flex lg:hidden">
+                </button>            
             </div>
-            <button class="flex md:hidden">
-                <img src="./assets/imgs/nav_imags/profile.webp" alt="profile image" class="image-profile">
-            </button>
         </div>
     </header>
 </body>
