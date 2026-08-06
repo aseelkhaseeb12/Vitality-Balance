@@ -31,19 +31,16 @@
     
     --shadow-first: 0px 4px 20px rgba(51,65,85,0.05);
     --shadow-second: 0px 10px 30px rgba(51, 65, 85, 0.12);
+
     --background-image-radial-custom: radial-gradient(171.95% 122.92% at 100% 0%, #C2ECD2 0%, #F8F9FF 100%);
-    
-    /* --breakpoint-xs: 390px !important;
-    --breakpoint-sm: 600px !important;
-    --breakpoint-md: 728px !important;
-    --breakpoint-lg: 984px !important;
-    --breakpoint-xl: 1140px !important;
-    --breakpoint-2xl: 1280px !important; */
+
+    --breakpoint-xs: 390px;
 }
 
 @layer base{
     body{
         font-family: var(--font-primary);
+        animation: name duration timing-function delay iteration-count direction fill-mode;
     }
     .container{
         @apply mx-auto px-6;
@@ -72,8 +69,12 @@
     @apply flex flex-col
 }
 
-
 /*start Navbar section styles*/
+@utility glass-nav{
+    background-color: rgba(248, 249, 255, 0.7);
+    backdrop-filter: blur(12px);
+}
+
 @utility nav-link{
     @apply text-xs leading-3 font-semibold tracking-[0.6px] row text-nav-link hover:text-third transition-all duration-150
 }
@@ -142,5 +143,11 @@
 /*start Home page styles*/
 @utility hero-buttons{
     @apply rounded-full py-4 px-12 text-[16px] leading-6 text-center sm:font-secondary font-semibold sm:font-normal
+}
+@utility first-hero-buttons{
+    @apply text-white bg-sixth shadow-first hover:brightness-90 transition-all duration-700
+}
+@utility second-hero-buttons{
+    @apply text-twelfth border-2 border-twelfth hover:bg-twelfth/5 transition-all duration-150
 }
 /*end Home page styles*/
