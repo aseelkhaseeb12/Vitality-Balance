@@ -7,7 +7,7 @@
     <link href="./assets/css/output.css" rel="stylesheet">
 </head>
 <body>
-    <header class="bg-nav/70 py-[22.22px] drop-shadow-xs fixed top-0 left-0 right-0 glass-nav">
+    <header class="bg-nav/70 py-[22.22px] drop-shadow-xs sticky top-0 left-0 right-0 glass-nav">
         <div class="container row justify-between">
             <div class="row gap-2">
                 <a href="./index.html">
@@ -50,31 +50,25 @@
         </div>
     </header>
     <main>
-        <section class="pt-12 sm:pt-33.75 pb-20 sm:pb-33.75 bg-radial-custom sm:bg-none sm:bg-secondaryC">
-            <div class="container grid grid-cols-1 lg:grid-cols-2 lg:gap-20 xl:gap-0 items-center">
-                <div class="col gap-[22.9px] lg:w-lg">
-                    <p class="sm:hidden uppercase text-[12px] leading-3 tracking-[1.2px] font-semibold text-third">holistic wellness</p>
-                    <h1 class="pb-[0.6px] font-secondary text-eleventh">
+        <section class="py-20 sm:py-33.75 bg-radial-custom sm:bg-none sm:bg-secondaryC">
+            <div class="container flex flex-col lg:flex-row sm:justify-between gap-12 sm:gap-0 items-center">
+                <!-- <div class="col gap-[22.7px] lg:w-lg"> -->
+                <div class="col gap-[22.7px] lg:w-lg">
+                    <h1 class="sm:pb-[0.6px] font-secondary text-eleventh">
                         Science-backed serenity for proactive well-being
                     </h1>
-                    <p class="hidden sm:flex pb-[0.69px] text-[18px] leading-[28.8px] text-nav-link">
+                    <p class="pb-[0.69px] text-[18px] leading-[28.8px] text-nav-link">
                         Transform your health with evidence-based strategies and mindful living. Experience a balance that lasts a lifetime.
                     </p>
-                    <p class="sm:hidden pb-[0.59px] pt-[7.4px] text-[18px] leading-[28.8px] text-nav-link">
-                        Personalized paths to health, grounded in clinical precision and modern mindfulness.
-                    </p>
-                    <div class="pt-[16.6px] sm:pt-6 col sm:flex-row gap-4 sm:gap-6">
+                    <div class="pt-[25.1px] gap-6 col sm:flex-row">
                         <button class="hero-buttons first-hero-buttons">
                             Start Your Journey
                         </button>
-                        <button class="hidden sm:flex hero-buttons second-hero-buttons">
+                        <button class="hero-buttons second-hero-buttons">
                             Read the Blog
                         </button>
-                        <button class="sm:hidden hero-buttons second-hero-buttons">
-                            Explore Our Tools
-                        </button>
                     </div>
-                    <div class="hidden sm:flex pt-[25.1px] row gap-6 opacity-60">
+                    <div class="pt-[25.3px] row gap-6 opacity-60">
                         <span class="text-[12px] leading-3 tracking-[1.2px] font-semibold text-nav-link uppercase">as seen in</span>
                         <div class="row gap-6 text-[14px] leading-5.25 font-bold font-secondary text-eleventh">
                             <span>HealthLine</span>
@@ -82,7 +76,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="hidden lg:flex">
+                <div>
                     <img src="./assets/imgs/home_images/home_hero_image.webp" alt="Hero image" class="w-full rounded-3xl shadow-second">
                 </div>
             </div>
