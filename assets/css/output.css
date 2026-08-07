@@ -9,8 +9,6 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-500: oklch(63.7% 0.237 25.331);
-    --color-blue-500: oklch(62.3% 0.214 259.815);
-    --color-pink-700: oklch(52.5% 0.223 3.958);
     --color-white: #FFFFFF;
     --spacing: 0.25rem;
     --container-lg: 32rem;
@@ -47,7 +45,7 @@
     --color-twelfth: #5f8670;
     --color-thirteenth: #567D67;
     --color-fourteenth: #F6FFF6;
-    --background-image-radial-custom: radial-gradient(171.95% 122.92% at 100% 0%, #C2ECD2 0%, #F8F9FF 100%);
+    --color-fifteenth: #7E4F51;
     --animate-moveUp: moveUp 700ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
@@ -218,6 +216,9 @@
   .top-1\/2 {
     top: calc(1 / 2 * 100%);
   }
+  .top-4 {
+    top: calc(var(--spacing) * 4);
+  }
   .right-0 {
     right: 0px;
   }
@@ -235,6 +236,9 @@
   }
   .left-3\.5 {
     left: calc(var(--spacing) * 3.5);
+  }
+  .left-4 {
+    left: calc(var(--spacing) * 4);
   }
   .container {
     width: 100%;
@@ -372,6 +376,9 @@
   }
   .table {
     display: table;
+  }
+  .aspect-4\/3 {
+    aspect-ratio: 4/3;
   }
   .h-1 {
     height: var(--spacing);
@@ -543,6 +550,9 @@
   .w-\[60\%\] {
     width: 60%;
   }
+  .w-fit {
+    width: fit-content;
+  }
   .w-full {
     width: 100%;
   }
@@ -641,6 +651,9 @@
       }
     }
   }
+  .cursor-pointer {
+    cursor: pointer;
+  }
   .resize {
     resize: both;
   }
@@ -694,6 +707,9 @@
   }
   .gap-\[22\.7px\] {
     gap: 22.7px;
+  }
+  .overflow-hidden {
+    overflow: hidden;
   }
   .footer-input {
     border-radius: var(--radius-lg);
@@ -799,6 +815,9 @@
     background-color: rgba(248, 249, 255, 0.7);
     backdrop-filter: blur(12px);
   }
+  .bg-fifteenth {
+    background-color: var(--color-fifteenth);
+  }
   .bg-fourth {
     background-color: var(--color-fourth);
   }
@@ -856,6 +875,9 @@
   .bg-white {
     background-color: var(--color-white);
   }
+  .object-cover {
+    object-fit: cover;
+  }
   .p-2 {
     padding: calc(var(--spacing) * 2);
   }
@@ -885,6 +907,9 @@
   }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
+  }
+  .px-3 {
+    padding-inline: calc(var(--spacing) * 3);
   }
   .px-12 {
     padding-inline: calc(var(--spacing) * 12);
@@ -953,6 +978,9 @@
   }
   .pt-12 {
     padding-top: calc(var(--spacing) * 12);
+  }
+  .pt-\[6\.8px\] {
+    padding-top: 6.8px;
   }
   .pt-\[7\.5px\] {
     padding-top: 7.5px;
@@ -1153,6 +1181,9 @@
   .text-eleventh {
     color: var(--color-eleventh);
   }
+  .text-fifteenth {
+    color: var(--color-fifteenth);
+  }
   .text-fifth {
     color: var(--color-fifth);
   }
@@ -1183,6 +1214,9 @@
   .text-twelfth {
     color: var(--color-twelfth);
   }
+  .text-white {
+    color: var(--color-white);
+  }
   .capitalize {
     text-transform: capitalize;
   }
@@ -1197,6 +1231,10 @@
   }
   .opacity-90 {
     opacity: 90%;
+  }
+  .shadow-first {
+    --tw-shadow: 0px 4px 20px var(--tw-shadow-color, rgba(51,65,85,0.05));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
   .shadow-second {
     --tw-shadow: 0px 10px 30px var(--tw-shadow-color, rgba(51, 65, 85, 0.12));
@@ -1231,6 +1269,24 @@
   .duration-150 {
     --tw-duration: 150ms;
     transition-duration: 150ms;
+  }
+  .duration-500 {
+    --tw-duration: 500ms;
+    transition-duration: 500ms;
+  }
+  @media (hover: hover) {
+    .group-hover\:scale-105:is(:where(.group):hover *) {
+      --tw-scale-x: 105%;
+      --tw-scale-y: 105%;
+      --tw-scale-z: 105%;
+      scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
+    .group-hover\:bg-third:is(:where(.group):hover *) {
+      background-color: var(--color-third);
+    }
+    .group-hover\:text-third:is(:where(.group):hover *) {
+      color: var(--color-third);
+    }
   }
   .placeholder\:text-eighth::placeholder {
     color: var(--color-eighth);
@@ -1293,6 +1349,9 @@
     .md\:w-\[114\.14px\] {
       width: 114.14px;
     }
+    .md\:grid-cols-2 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
     .md\:grid-cols-3 {
       grid-template-columns: repeat(3, minmax(0, 1fr));
     }
@@ -1339,6 +1398,9 @@
     .lg\:w-lg {
       width: var(--container-lg);
     }
+    .lg\:grid-cols-3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
     .lg\:grid-cols-4 {
       grid-template-columns: repeat(4, minmax(0, 1fr));
     }
@@ -1381,6 +1443,11 @@
     font-weight: 600;
   }
   h3 {
+    font-size: 1.5rem;
+    line-height: 2.1rem;
+    font-weight: 600;
+  }
+  h4 {
     font-size: 1.5rem;
     line-height: 2.1rem;
     font-weight: 600;
