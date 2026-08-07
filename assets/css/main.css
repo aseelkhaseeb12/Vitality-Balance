@@ -17,7 +17,6 @@
     --color-nav-link: #414843;
     --color-third: #3E644F;
     --color-white: #FFFFFF;
-    /* --color-secondaryC: #FFDADA; */
     --color-secondaryC: #fbf9f1;
     --color-fourth: #C1C8C1;
     --color-fifth: #717973;
@@ -53,18 +52,16 @@
         font-size: 2rem;
         line-height: 2.4rem;
         font-weight: 700;
-
+        
         @variant sm{
             font-size: 3rem;
             line-height: 3.3rem;
         }
     }
     h3{
-        @variant sm{
-            font-size: 1.5rem;
-            line-height: 1.5rem;
-            font-weight: 600;
-        }
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        font-weight: 600;
     }
 }
 
