@@ -30,6 +30,7 @@
     --color-thirteenth: #567D67;
     --color-fourteenth: #F6FFF6;
     --color-fifteenth: #7E4F51;
+    --color-sixteenth: #2563eb;
 
     --shadow-first: 0px 4px 20px rgba(51,65,85,0.05);
     --shadow-second: 0px 10px 30px rgba(51, 65, 85, 0.12);
@@ -164,7 +165,7 @@
 }
 
 @utility footer-links{
-    @apply pt-0.5 pb-px text-[14px] leading-5.25 text-nav-link hover:text-third hover:underline transition-all duration-150
+    @apply pt-0.5 pb-px text-[16px] leading-[24px] text-nav-link hover:text-third hover:underline transition-all duration-150
 }
 
 @utility footer-input{
