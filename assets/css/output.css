@@ -813,6 +813,9 @@
   .gap-\[23\.99px\] {
     gap: 23.99px;
   }
+  .gap-\[24px\] {
+    gap: 24px;
+  }
   .overflow-hidden {
     overflow: hidden;
   }
@@ -1143,6 +1146,9 @@
   .py-12 {
     padding-block: calc(var(--spacing) * 12);
   }
+  .py-14 {
+    padding-block: calc(var(--spacing) * 14);
+  }
   .py-20 {
     padding-block: calc(var(--spacing) * 20);
   }
@@ -1160,6 +1166,9 @@
   }
   .py-\[23\.5px\] {
     padding-block: 23.5px;
+  }
+  .py-\[56px\] {
+    padding-block: 56px;
   }
   .property-title {
     padding-top: calc(var(--spacing) * 3.75);
@@ -1267,6 +1276,9 @@
   }
   .pb-\[12\.59px\] {
     padding-bottom: 12.59px;
+  }
+  .pb-\[40\.41px\] {
+    padding-bottom: 40.41px;
   }
   .nav-button-text {
     text-align: center;
@@ -1561,6 +1573,9 @@
     .sm\:block {
       display: block;
     }
+    .sm\:grid {
+      display: grid;
+    }
     .sm\:w-120 {
       width: calc(var(--spacing) * 120);
     }
@@ -1624,6 +1639,9 @@
     .md\:w-\[114\.14px\] {
       width: 114.14px;
     }
+    .md\:w-auto {
+      width: auto;
+    }
     .md\:w-fit {
       width: fit-content;
     }
@@ -1632,6 +1650,9 @@
     }
     .md\:grid-cols-3 {
       grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .md\:grid-cols-4 {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
     }
     .md\:flex-row {
       flex-direction: row;
@@ -1653,6 +1674,9 @@
     }
     .md\:py-\[23\.5px\] {
       padding-block: 23.5px;
+    }
+    .md\:pb-\[40\.41px\] {
+      padding-bottom: 40.41px;
     }
     .md\:text-\[12px\] {
       font-size: 12px;
@@ -1707,6 +1731,9 @@
   @media (width >= 80rem) {
     .xl\:w-1\/3 {
       width: calc(1 / 3 * 100%);
+    }
+    .xl\:flex-row {
+      flex-direction: row;
     }
   }
 }
