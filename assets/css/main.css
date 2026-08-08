@@ -214,7 +214,7 @@
         @apply p-6 col gap-2
     }
     .social-proof-card{
-        @apply p-12 col gap-12
+        @apply p-12 col gap-12 
     }
 }
 /*animation*/
