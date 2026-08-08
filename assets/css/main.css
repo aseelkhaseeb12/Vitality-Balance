@@ -82,6 +82,13 @@
         /* font-size: 24px;
         line-height: 33.6px; */
     }
+    h5{
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 700;
+        /* font-size: 16px;
+        line-height: 24px; */
+    }
 }
 
 @utility row{
@@ -205,6 +212,9 @@
     }
     .property_card{
         @apply p-6 col gap-2
+    }
+    .social-proof-card{
+        @apply p-12 col gap-12
     }
 }
 /*animation*/
