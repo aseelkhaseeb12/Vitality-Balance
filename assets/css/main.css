@@ -171,7 +171,7 @@
 }
 
 @utility footer-links{
-    @apply pt-0.5 pb-px text-[16px] leading-[24px] text-nav-link hover:text-third hover:underline transition-all duration-150
+    @apply pt-0.5 pb-px text-[16px] leading-6 text-nav-link hover:text-third hover:underline transition-all duration-150
 }
 
 @utility footer-input{
@@ -224,7 +224,11 @@
     .social-proof-card{
         @apply p-12 col gap-12 
     }
+    .credibility_card{
+        @apply rounded-xl p-6 flex gap-6 bg-white shadow-first
+    }
 }
+
 /*animation*/
 @keyframes moveUp{
     0%{

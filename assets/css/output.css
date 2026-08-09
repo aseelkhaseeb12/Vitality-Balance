@@ -8,7 +8,6 @@
       "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-600: oklch(57.7% 0.245 27.325);
     --color-white: #FFFFFF;
     --spacing: 0.25rem;
     --container-lg: 32rem;
@@ -18,7 +17,6 @@
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
-    --tracking-normal: 0em;
     --radius-sm: 0.25rem;
     --radius-lg: 0.5rem;
     --radius-xl: 0.75rem;
@@ -296,9 +294,6 @@
   .me-10 {
     margin-inline-end: calc(var(--spacing) * 10);
   }
-  .me-\[13\.52px\] {
-    margin-inline-end: 13.52px;
-  }
   .ml-2 {
     margin-left: calc(var(--spacing) * 2);
   }
@@ -426,6 +421,9 @@
   }
   .h-\[16\.01px\] {
     height: 16.01px;
+  }
+  .h-fit {
+    height: fit-content;
   }
   .h-full {
     height: 100%;
@@ -710,9 +708,6 @@
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
-  .grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
   .grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -755,26 +750,17 @@
   .gap-12 {
     gap: calc(var(--spacing) * 12);
   }
-  .gap-20 {
-    gap: calc(var(--spacing) * 20);
-  }
   .gap-\[3\.3px\] {
     gap: 3.3px;
   }
   .gap-\[22\.7px\] {
     gap: 22.7px;
   }
-  .gap-\[22\.8px\] {
-    gap: 22.8px;
-  }
   .gap-\[23\.1px\] {
     gap: 23.1px;
   }
   .gap-\[23\.99px\] {
     gap: 23.99px;
-  }
-  .gap-\[80px\] {
-    gap: 80px;
   }
   .overflow-hidden {
     overflow: hidden;
@@ -935,9 +921,6 @@
   .bg-nineteenth {
     background-color: var(--color-nineteenth);
   }
-  .bg-red-600 {
-    background-color: var(--color-red-600);
-  }
   .bg-secondaryC {
     background-color: var(--color-secondaryC);
   }
@@ -1016,6 +999,9 @@
   .p-2 {
     padding: calc(var(--spacing) * 2);
   }
+  .p-3 {
+    padding: calc(var(--spacing) * 3);
+  }
   .p-6 {
     padding: calc(var(--spacing) * 6);
   }
@@ -1082,9 +1068,6 @@
   .py-4\.5 {
     padding-block: calc(var(--spacing) * 4.5);
   }
-  .py-6 {
-    padding-block: calc(var(--spacing) * 6);
-  }
   .py-12 {
     padding-block: calc(var(--spacing) * 12);
   }
@@ -1113,8 +1096,8 @@
     padding-top: calc(var(--spacing) * 0.5);
     padding-bottom: 1px;
     font-size: 16px;
-    --tw-leading: 24px;
-    line-height: 24px;
+    --tw-leading: calc(var(--spacing) * 6);
+    line-height: calc(var(--spacing) * 6);
     color: var(--color-nav-link);
     transition-property: all;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
@@ -1164,9 +1147,6 @@
   }
   .pt-\[25\.1px\] {
     padding-top: 25.1px;
-  }
-  .pt-\[25\.2px\] {
-    padding-top: 25.2px;
   }
   .pt-\[25\.3px\] {
     padding-top: 25.3px;
@@ -1326,10 +1306,6 @@
     --tw-leading: calc(var(--spacing) * 6);
     line-height: calc(var(--spacing) * 6);
   }
-  .leading-\[12px\] {
-    --tw-leading: 12px;
-    line-height: 12px;
-  }
   .leading-\[17\.88px\] {
     --tw-leading: 17.88px;
     line-height: 17.88px;
@@ -1373,10 +1349,6 @@
   .tracking-\[2\.4px\] {
     --tw-tracking: 2.4px;
     letter-spacing: 2.4px;
-  }
-  .tracking-normal {
-    --tw-tracking: var(--tracking-normal);
-    letter-spacing: var(--tracking-normal);
   }
   .text-eighteenth {
     color: var(--color-eighteenth);
@@ -1575,14 +1547,8 @@
     .sm\:pb-\[0\.59px\] {
       padding-bottom: 0.59px;
     }
-    .sm\:pb-\[0\.69px\] {
-      padding-bottom: 0.69px;
-    }
   }
   @media (width >= 48rem) {
-    .md\:me-0 {
-      margin-inline-end: 0px;
-    }
     .md\:block {
       display: block;
     }
@@ -1771,6 +1737,15 @@
     flex-direction: column;
     gap: calc(var(--spacing) * 12);
     padding: calc(var(--spacing) * 12);
+  }
+  .credibility_card {
+    display: flex;
+    gap: calc(var(--spacing) * 6);
+    border-radius: var(--radius-xl);
+    background-color: var(--color-white);
+    padding: calc(var(--spacing) * 6);
+    --tw-shadow: 0px 4px 20px var(--tw-shadow-color, rgba(51,65,85,0.05));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
 }
 @keyframes moveUp {
