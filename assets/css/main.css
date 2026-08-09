@@ -34,6 +34,10 @@
     --color-seventeenth: #C2ECD2;
     --color-eighteenth: #284E3B;
     --color-nineteenth: #E6EEFF;
+    --color-twentieth: #FFDADA;
+    --color-twentyOne: #1B1C17;
+    --color-twentyTwo: #474742;
+    --color-twentyThree: #E4E3DB;
 
     --shadow-first: 0px 4px 20px rgba(51,65,85,0.05);
     --shadow-second: 0px 10px 30px rgba(51, 65, 85, 0.12);
@@ -80,6 +84,7 @@
         font-size: 1.5rem;
         line-height: 2.1rem;
         font-weight: 600;
+        font-family: var(--font-secondary);
         /* font-size: 24px;
         line-height: 33.6px; */
     }
@@ -195,7 +200,7 @@
 
 /*start Properties section styles*/
 @utility property-title{
-    @apply pt-3.75 pb-[0.59px] font-secondary text-third
+    @apply pt-3.75 pb-[0.59px] text-third
 }
 @utility property-description{
     @apply text-[14px] leading-5.25 text-nav-link
