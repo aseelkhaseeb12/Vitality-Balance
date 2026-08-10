@@ -39,6 +39,7 @@
     --color-twentyTwo: #474742;
     --color-twentyThree: #E4E3DB;
     --color-twentyFour: #DDE9FF;
+    --color-twentyFive: #d5e3fd;
 
     --shadow-first: 0px 4px 20px rgba(51,65,85,0.05);
     --shadow-second: 0px 10px 30px rgba(51, 65, 85, 0.12);
@@ -287,6 +288,15 @@
     @apply text-third border-2 border-third/20 hover:bg-third/5 transition-all duration-150
 }
 /*end Hero section styles*/
+
+/*start Category section styles*/
+@utility category-button{
+    @apply py-2 px-6 rounded-full text-[16px] leading-6 text-center
+}
+@utility category-button-secondary{
+    @apply text-nav-link hover:bg-twentyFive/50 transition-all duration-150
+}
+/*end Category section styles*/
 
 /*end Tools page styles*/
 
