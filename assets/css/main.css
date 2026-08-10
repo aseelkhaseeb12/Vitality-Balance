@@ -45,7 +45,6 @@
     --shadow-third: 0px 0px 0px 8px rgba(194, 236, 210, 1);
     --shadow-fourth: 0px 0px 0px 8px rgba(255, 218, 218, 1);
 
-
     --background-image-radial-custom: radial-gradient(171.95% 122.92% at 100% 0%, #C2ECD2 0%, #F8F9FF 100%);
     --background-image-linear-custom: linear-gradient(180deg, rgba(95, 134, 112, 0) 0%, #5F8670 50%, rgba(95, 134, 112, 0) 100%);
 
@@ -223,6 +222,55 @@
 
 /*end Home page styles*/
 
+/*start About page styles*/
+
+/*start story timeline section styles*/
+@utility story-box{
+    @apply md:w-[45%] col pt-1 pb-6 md:pb-0 gap-1.75
+}
+@utility story-date{
+    @apply py-1 px-4 w-fit rounded-full bg-twentyFour text-[12px] leading-3 tracking-[0.6px] text-third font-semibold
+}
+@utility story-description{
+    @apply pt-px text-[14px] leading-5.25 text-nav-link
+}
+@utility story-vertical-line{
+    @apply rounded-full bg-third mb-6 md:mb-0 w-4 h-4 shadow-third z-10
+}
+/*end story timeline section styles*/
+
+/*start expert section styles*/
+@utility expert-card{
+    @apply col rounded-3xl bg-white shadow-first hover:-translate-y-1 hover:shadow-second transition-all duration-300
+}
+@utility expert-image{
+    @apply w-full rounded-tl-3xl rounded-tr-3xl
+}
+@utility expert-speciality{
+    @apply absolute top-4 right-4 py-[2.5px] px-3 w-fit text-[10px] leading-3.75 bg-white/90 rounded-full uppercase backdrop-blur-md
+}
+@utility expert-name{
+    @apply pb-[0.59px] font-secondary text-eleventh
+}
+@utility expert-desciption{
+    @apply text-[14px] leading-[22.75px] text-nav-link
+}
+/*end expert section styles*/
+
+/*start journey section styles*/
+@utility journey-button{
+    @apply py-4 px-[30.84px] md:px-10 rounded-full text-[24px] leading-[33.6px] font-semibold font-secondary text-white
+}
+@utility meet-coaches-button{
+    @apply bg-sixth shadow-second hover:brightness-90 transition-all duration-150
+}
+@utility health-quiz-button{
+    @apply bg-white/10 border border-white/20 hover:bg-white/20 transition-all duration-150
+}
+/*end journey section styles*/
+
+/*end About page styles*/
+
 /*components*/
 @layer components{
     .card{
@@ -235,7 +283,7 @@
         @apply p-12 col gap-12 
     }
     .credibility_card{
-        @apply rounded-xl p-6 flex gap-6 bg-white shadow-first
+        @apply rounded-xl p-6 flex gap-6 bg-white shadow-first hover:shadow-second transition-all duration-150
     }
 }
 
