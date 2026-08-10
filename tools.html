@@ -7,7 +7,7 @@
     <link href="./assets/css/output.css" rel="stylesheet">
 </head>
 <body>
-    <header class="bg-nav/70 py-[22.22px] drop-shadow-xs">
+    <header class="bg-nav/70 py-[22.22px] drop-shadow-xs sticky top-0 left-0 right-0 z-20 glass-nav">
         <div class="container row justify-between">
             <div class="row gap-2">
                 <a href="./index.html">
@@ -50,7 +50,41 @@
         </div>
     </header>
     <main>
-        <section></section>
+        <section class="py-12 md:py-20 bg-nav">
+            <div class="container grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="col">
+                    <span class="relative top-[7.5px] left-4 text-[12px] leading-3 tracking-[0.6px] font-bold text-sixth uppercase">proactive well-being</span>
+                    <h1 class="pt-[19.4px] pb-[0.69px] text-eleventh">
+                        Tools that turn <span class="text-third">goals</span> into <span class="italic">habits</span>.
+                    </h1>
+                    <p class="pt-[22.8px] md:pb-[0.59px] md:max-w-lg text-[18px] leading-[28.8px] text-nav-link">
+                        Science-backed calculators and trackers designed to simplify your health journey. Real-time insights for the modern lifestyle.
+                    </p>
+                    <div class="pt-12 gap-4 col lg:flex-row">
+                        <button class="hero-buttons first-hero-buttons">
+                            Explores Guides
+                        </button>
+                        <button class="hero-buttons second-hero-buttons">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="h-100 md:h-125">
+                        <img class="w-full h-full object-cover rounded-4xl bg-thirteenth shadow-second" src="./assets/imgs/tools_images/hero_section/tools_hero.webp" alt="Hero image">
+                    </div>
+                    <div class="absolute -left-2 -bottom-2 row gap-4 p-4 rounded-3xl bg-white shadow-second animate-bounce" style="animation-duration: 3s">
+                        <div class="rounded-full p-2 bg-third/10">
+                            <img src="./assets/imgs/tools_images/hero_section/right.svg" alt="right icon">
+                        </div>
+                        <div class="col">
+                            <p class="text-[12px] leading-3 tracking-[0.6px] font-bold text-eleventh">Goal Reached</p>
+                            <p class="text-[10px] leading-3.75 text-[nav-link]">Daily Water Goal Complete</p>
+                        </div>
+                    </div>                
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="bg-seventh py-12">
         <div class="container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">

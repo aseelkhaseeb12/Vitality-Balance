@@ -67,13 +67,16 @@
         font-size: 2rem;
         line-height: 2.4rem;
         font-weight: 700;
+        font-family: var(--font-secondary);
         /* font-size: 32px;
         line-height: 41.6px; */
         @variant sm{
             font-size: 3rem;
             line-height: 3.3rem;
+            letter-spacing: -0.06rem;
             /* font-size: 48px;
-        line-height: 52.8px; */
+            line-height: 52.8px; 
+            letter-spacing: -0.96px;*/
         }
     }
     h2{
@@ -270,6 +273,22 @@
 /*end journey section styles*/
 
 /*end About page styles*/
+
+/*start Tools page styles*/
+
+/*start Hero section styles*/
+@utility hero-buttons{
+    @apply rounded-full py-[26.5px] px-12 text-[16px] leading-6 text-center font-secondary
+}
+@utility first-hero-buttons{
+    @apply text-white bg-sixth shadow-first hover:brightness-95 transition-all duration-150
+}
+@utility second-hero-buttons{
+    @apply text-third border-2 border-third/20 hover:bg-third/5 transition-all duration-150
+}
+/*end Hero section styles*/
+
+/*end Tools page styles*/
 
 /*components*/
 @layer components{
