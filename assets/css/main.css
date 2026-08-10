@@ -38,11 +38,16 @@
     --color-twentyOne: #1B1C17;
     --color-twentyTwo: #474742;
     --color-twentyThree: #E4E3DB;
+    --color-twentyFour: #DDE9FF;
 
     --shadow-first: 0px 4px 20px rgba(51,65,85,0.05);
     --shadow-second: 0px 10px 30px rgba(51, 65, 85, 0.12);
+    --shadow-third: 0px 0px 0px 8px rgba(194, 236, 210, 1);
+    --shadow-fourth: 0px 0px 0px 8px rgba(255, 218, 218, 1);
+
 
     --background-image-radial-custom: radial-gradient(171.95% 122.92% at 100% 0%, #C2ECD2 0%, #F8F9FF 100%);
+    --background-image-linear-custom: linear-gradient(180deg, rgba(95, 134, 112, 0) 0%, #5F8670 50%, rgba(95, 134, 112, 0) 100%);
 
     --animate-moveUp: moveUp 700ms cubic-bezier(0.4, 0, 0.2, 1);
 
