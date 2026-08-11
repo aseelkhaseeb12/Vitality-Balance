@@ -86,8 +86,8 @@
                 </div>
             </div>
         </section>
-        <!-- Category Tabs -->
-        <section class="py-4 bg-seventh/50 backdrop-blur-xs sticky top-[94.44px] overflow-x-auto glass-category">
+        <!-- Category Tabs Section -->
+        <section class="py-4 bg-seventh/50 backdrop-blur-xs sticky top-[94.44px] z-10 overflow-x-auto glass-category">
             <div class="container row gap-6">
                 <button class="category-button text-white bg-third">Nutrition</button>
                 <button class="category-button category-button-secondary">Fitness</button>
@@ -95,7 +95,7 @@
                 <button class="category-button category-button-secondary">Mindfulness</button>
             </div>
         </section>
-        <!-- Bento Grid Tools -->
+        <!-- Bento Grid Tools Section -->
         <section class="py-12 bg-nav">
             <div class="container grid grid-cols-1 lg:grid-cols-3 gap-6">
                 <!-- BMI Calculator -->
@@ -242,6 +242,64 @@
                 </div>
             </div>
         </section>
+        <!-- Section - Expanded Tool Module: Interactive Water Intake Tracker -->
+         <section class="py-20 px-6 bg-seventh">
+            <div class="flex flex-col md:flex-row rounded-4xl bg-white shadow-second overflow-hidden">
+                <!-- Control Panel (Left) -->
+                <div class="col gap-[14.8px] p-12 lg:p-20 md:w-1/2 border-e border-e-fifth/5">
+                    <div class="py-2 px-4 rounded-full w-fit bg-twentyEight text-[16px] leading-6 text-sixteenth">ACTIVE TOOL</div>
+                    <h2 class="text-eleventh">Precision Hydration Tracker</h2>
+                    <p class="pt-[9.2px] text-[16px] leading-6 text-nav-link">
+                        Calculate your optimal daily water intake based on activity levels and environmental factors.
+                    </p>
+                    <form class="col gap-6 pt-[33.2px]">
+                        <div class="col gap-2">
+                            <label for="activityLevel" class="text-[12px] leading-3 tracking-[0.6px] font-bold text-eleventh">ACTIVITY LEVEL</label>
+                            <div class="relative">
+                                <select name="activityLevel" id="activityLevel" class="bg-nav w-full p-4 appearance-none text-[16px] leading-6 text-eleventh border border-fifth/20 rounded-3xl focus:ring-2 focus:ring-third/20 focus:border-third transition-all duration-150">
+                                    <option value="Sedentary">Sedentary</option>
+                                    <option value="Moderately Active">Moderately Active</option>
+                                    <option selected value="Very Active">Very Active</option>
+                                    <option value="Athlete">Athlete</option>
+                                </select>
+                                <div class="absolute top-4 right-4 pointer-events-none">
+                                    <img src="./assets/imgs/tools_images/Interactive_Water_Intake_Tracker/select.svg" alt="select icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col pb-4 gap-2">
+                            <label for="CLIMATE" class="text-[12px] leading-3 tracking-[0.6px] font-bold text-eleventh">CLIMATE</label>
+                            <div class="grid grid-cols-3 gap-3.5 md:gap-4">
+                                <button class="rounded-3xl py-[17.5px] px-[17.42px] xl:px-[52.42px] border border-fifth/20 text-[12px] leading-4 font-bold text-eleventh hover:border-third transition-all duration-150">
+                                    COOL
+                                </button>
+                                <button class="rounded-3xl py-4 xl:px-[32.19px] border-2 border-third bg-third/5 text-[12px] leading-4 font-bold text-third">
+                                    TEMPERATE
+                                </button>
+                                <button class="rounded-3xl py-[17.5px] px-[21.58px] xl:px-[56.58px] border border-fifth/20 text-[12px] leading-4 font-bold text-eleventh hover:border-third transition-all duration-150">
+                                    HOT
+                                </button>
+                            </div>
+                        </div>
+                        <button class="bg-sixth rounded-full py-6 text-[16px] leading-6 font-secondary text-white hover:brightness-95 transition-all duration-150">
+                            Recalculate Goal
+                        </button>
+                    </form>
+                </div>
+                <!-- Live Progress (Right) -->
+                <div class="flex justify-center items-center md:w-1/2 p-20 bg-third/5">
+                    <div class="col gap-7.5 items-center justify-center">
+                        <div>
+                            <img src="./assets/imgs/tools_images/Interactive_Water_Intake_Tracker/Live_Progress.svg" alt="Live Progress icon">
+                        </div>
+                        <div class="col gap-1">
+                            <p class="text-[24px] leading-[33.6px] font-bold text-eleventh">2.2 / 3.0 Liters</p>
+                            <p class="text-[14px] leading-5.25 text-nav-link">800ml remaining for today</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
     </main>
     <footer class="bg-seventh py-12">
         <div class="container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
