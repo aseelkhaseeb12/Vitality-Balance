@@ -309,6 +309,16 @@
 }
 /*end Category section styles*/
 
+/*start Services page styles*/
+
+/*start How It Works Section styles*/
+@utility property_service{
+    @apply pt-3.75 pb-[0.59px] text-eleventh
+}
+/*end How It Works Section styles*/
+
+/*end Services page styles*/
+
 /*end Tools page styles*/
 
 /*components*/
@@ -325,6 +335,10 @@
     .credibility_card{
         @apply rounded-xl p-6 flex gap-6 bg-white shadow-first hover:shadow-second transition-all duration-150
     }
+    .step_card{
+        @apply rounded-3xl items-center bg-white text-center shadow-xs hover:shadow-md transition-shadow
+    }
+
 }
 
 /*animation*/
