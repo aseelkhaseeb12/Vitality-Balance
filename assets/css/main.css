@@ -134,7 +134,7 @@
 }
 
 @utility nav-link{
-    @apply text-xs leading-3 font-semibold tracking-[0.6px] row text-nav-link hover:text-third transition-all duration-150
+    @apply text-[14px] leading-3 font-semibold tracking-[0.6px] row text-nav-link hover:text-third transition-all duration-150
 }
 
 @utility nav-button{
