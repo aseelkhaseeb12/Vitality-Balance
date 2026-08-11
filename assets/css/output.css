@@ -2579,6 +2579,15 @@
       }
     }
   }
+  .step_image {
+    display: flex;
+    align-items: center;
+    height: calc(var(--spacing) * 16);
+    width: calc(var(--spacing) * 16);
+    justify-content: center;
+    border-radius: calc(infinity * 1px);
+    background-color: var(--color-seventeenth);
+  }
 }
 @keyframes moveUp {
   0% {

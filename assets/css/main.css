@@ -338,6 +338,9 @@
     .step_card{
         @apply rounded-3xl items-center bg-white text-center shadow-xs hover:shadow-md transition-shadow
     }
+    .step_image{
+        @apply row justify-center rounded-full w-16 h-16 bg-seventeenth
+    }
 
 }
 
