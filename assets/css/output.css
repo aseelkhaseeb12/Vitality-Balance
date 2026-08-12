@@ -8,10 +8,12 @@
       "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-500: oklch(63.7% 0.237 25.331);
     --color-white: #FFFFFF;
     --spacing: 0.25rem;
     --container-md: 28rem;
     --container-lg: 32rem;
+    --container-xl: 36rem;
     --container-2xl: 42rem;
     --text-xs: 0.75rem;
     --text-xs--line-height: calc(1 / 0.75);
@@ -341,14 +343,11 @@
   .left-6 {
     left: calc(var(--spacing) * 6);
   }
+  .left-23 {
+    left: calc(var(--spacing) * 23);
+  }
   .left-23\.75 {
     left: calc(var(--spacing) * 23.75);
-  }
-  .left-\[95px\] {
-    left: 95px;
-  }
-  .left-\[127\.89px\] {
-    left: 127.89px;
   }
   .story-vertical-line {
     z-index: 10;
@@ -371,9 +370,6 @@
   }
   .z-20 {
     z-index: 20;
-  }
-  .col-5 {
-    grid-column: 5;
   }
   .row-start-1 {
     grid-row-start: 1;
@@ -534,6 +530,25 @@
       padding: calc(var(--spacing) * 10);
     }
   }
+  .coach-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--radius-3xl);
+    background-color: var(--color-white);
+    --tw-shadow: 0 1px 2px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.05));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    transition-property: box-shadow;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+    --tw-duration: 300ms;
+    transition-duration: 300ms;
+    &:hover {
+      @media (hover: hover) {
+        --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+        box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+      }
+    }
+  }
   .col {
     display: flex;
     flex-direction: column;
@@ -619,6 +634,24 @@
   }
   .h-px {
     height: 1px;
+  }
+  .coach-image {
+    width: 100%;
+    border-top-left-radius: var(--radius-3xl);
+    border-top-right-radius: var(--radius-3xl);
+    transition-property: transform, translate, scale, rotate;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+    --tw-duration: 500ms;
+    transition-duration: 500ms;
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        --tw-scale-x: 105%;
+        --tw-scale-y: 105%;
+        --tw-scale-z: 105%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
+    }
   }
   .input-reg {
     width: 100%;
@@ -848,6 +881,15 @@
   .w-full {
     width: 100%;
   }
+  .w-xl {
+    width: var(--container-xl);
+  }
+  .max-w-\[320px\] {
+    max-width: 320px;
+  }
+  .max-w-xl {
+    max-width: var(--container-xl);
+  }
   .flex-1 {
     flex: 1;
   }
@@ -1067,9 +1109,6 @@
   .gap-\[15\.99px\] {
     gap: 15.99px;
   }
-  .gap-\[20px\] {
-    gap: 20px;
-  }
   .gap-\[22\.7px\] {
     gap: 22.7px;
   }
@@ -1082,20 +1121,11 @@
   .gap-\[23\.99px\] {
     gap: 23.99px;
   }
-  .gap-x-5 {
-    column-gap: calc(var(--spacing) * 5);
-  }
   .gap-x-6 {
     column-gap: calc(var(--spacing) * 6);
   }
   .gap-y-6 {
     row-gap: calc(var(--spacing) * 6);
-  }
-  .gap-y-7\.5 {
-    row-gap: calc(var(--spacing) * 7.5);
-  }
-  .gap-y-\[30px\] {
-    row-gap: 30px;
   }
   .overflow-hidden {
     overflow: hidden;
@@ -1466,6 +1496,9 @@
       background-color: color-mix(in oklab, var(--color-nineteenth) 30%, transparent);
     }
   }
+  .bg-red-500 {
+    background-color: var(--color-red-500);
+  }
   .bg-secondaryC {
     background-color: var(--color-secondaryC);
   }
@@ -1769,6 +1802,13 @@
     padding-bottom: 0.59px;
     color: var(--color-eleventh);
   }
+  .coach-desciption {
+    padding-top: calc(var(--spacing) * 4);
+    font-size: 14px;
+    --tw-leading: calc(var(--spacing) * 5.25);
+    line-height: calc(var(--spacing) * 5.25);
+    color: var(--color-nav-link);
+  }
   .story-description {
     padding-top: 1px;
     font-size: 14px;
@@ -1871,6 +1911,11 @@
   }
   .pt-px {
     padding-top: 1px;
+  }
+  .coach-name {
+    padding-bottom: 0.59px;
+    font-family: var(--font-secondary);
+    color: var(--color-eleventh);
   }
   .expert-name {
     padding-bottom: 0.59px;
@@ -1975,6 +2020,16 @@
   }
   .font-secondary {
     font-family: var(--font-secondary);
+  }
+  .coach-speciality {
+    font-size: 12px;
+    --tw-leading: calc(var(--spacing) * 3);
+    line-height: calc(var(--spacing) * 3);
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+    --tw-tracking: 0.6px;
+    letter-spacing: 0.6px;
+    color: var(--color-third);
   }
   .label-reg {
     font-size: 12px;
@@ -2440,20 +2495,29 @@
     .sm\:w-120 {
       width: calc(var(--spacing) * 120);
     }
+    .sm\:w-xl {
+      width: var(--container-xl);
+    }
+    .sm\:max-w-xl {
+      max-width: var(--container-xl);
+    }
     .sm\:grid-cols-2 {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
     .sm\:flex-row {
       flex-direction: row;
     }
-    .sm\:items-center {
-      align-items: center;
+    .sm\:items-end {
+      align-items: flex-end;
     }
     .sm\:justify-between {
       justify-content: space-between;
     }
     .sm\:gap-0 {
       gap: 0px;
+    }
+    .sm\:gap-4 {
+      gap: calc(var(--spacing) * 4);
     }
     .sm\:gap-\[3\.5px\] {
       gap: 3.5px;
@@ -2528,6 +2592,9 @@
     }
     .md\:max-w-lg {
       max-width: var(--container-lg);
+    }
+    .md\:max-w-xl {
+      max-width: var(--container-xl);
     }
     .md\:grid-cols-2 {
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -2663,6 +2730,9 @@
     }
     .lg\:w-md {
       width: var(--container-md);
+    }
+    .lg\:max-w-xl {
+      max-width: var(--container-xl);
     }
     .lg\:grid-cols-3 {
       grid-template-columns: repeat(3, minmax(0, 1fr));

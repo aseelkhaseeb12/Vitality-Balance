@@ -344,9 +344,25 @@
 }
 /*end Pricing Section styles*/
 
-/*end Services page styles*/
+/*start Coach section styles*/
+@utility coach-card{
+    @apply col rounded-3xl bg-white shadow-xs hover:shadow-lg transition-shadow duration-300
+}
+@utility coach-image{
+    @apply w-full rounded-tl-3xl rounded-tr-3xl group-hover:scale-105 transition-transform duration-500
+}
+@utility coach-name{
+    @apply pb-[0.59px] font-secondary text-eleventh
+}
+@utility coach-speciality{
+    @apply text-[12px] leading-3 tracking-[0.6px] font-semibold text-third
+}
+@utility coach-desciption{
+    @apply pt-4 text-[14px] leading-5.25 text-nav-link
+}
+/*end Coach section styles*/
 
-/*end Tools page styles*/
+/*end Services page styles*/
 
 /*components*/
 @layer components{
