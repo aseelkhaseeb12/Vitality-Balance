@@ -6,8 +6,8 @@
     <title>Vitality & Balance</title>
     <link href="./assets/css/output.css" rel="stylesheet">
 </head>
-<body>
-    <header class="bg-nav/70 py-[22.22px] drop-shadow-xs">
+<body class="bg-secondaryC">
+    <header class="bg-nav/70 py-[22.22px] drop-shadow-xs sticky top-0 left-0 right-0 z-20 glass-nav">
         <div class="container row justify-between">
             <div class="row gap-2">
                 <a href="./index.html">
@@ -17,7 +17,7 @@
             <nav class="hidden lg:flex">
                 <ul class="row gap-6">
                     <li>
-                        <a href="./index.html" class="nav-link capitalize pb-1 border-b-2 border-b-third text-third">home</a>
+                        <a href="./index.html" class="nav-link capitalize">home</a>
                     </li>
                     <li>
                         <a href="./about.html" class="nav-link capitalize">about</a>
@@ -32,7 +32,7 @@
                         <a href="./services.html" class="nav-link capitalize">services</a>
                     </li>
                     <li>
-                        <a href="./community.html" class="nav-link capitalize">community</a>
+                        <a href="./community.html" class="nav-link capitalize  pb-1 border-b-2 border-b-third text-third">community</a>
                     </li>
                 </ul>
             </nav>
@@ -49,6 +49,18 @@
             </div>
         </div>
     </header>
+    <main>
+        <!-- Hero Section -->
+        <section class="py-20">
+            <div class="container col gap-3.75 pt-1 items-center">
+                <div class="py-1 px-4 rounded-full bg-thirteenth/10 text-[12px] leading-3 tracking-[0.6px] font-semibold text-center text-third">CONNECT WITH US</div>
+                <h1 class="pb-[0.8px] text-center text-third">Let's Connect</h1>
+                <p class="pt-[7.8px] pb-[0.6px] w-85.5 md:w-2xl text-[18px] leading-[28.8px] text-center text-nav-link">
+                    Whether you're seeking guidance on your wellness journey, exploring partnership opportunities, or wanting to join our growing community, we're here to listen and grow with you.
+                </p>
+            </div>
+        </section>
+    </main>
     <footer class="bg-seventh py-12">
         <div class="container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
             <div class="col gap-6 pb-[40.41px]">
@@ -60,7 +72,7 @@
                 </p>
             </div>
             <div class="col gap-6">
-                <h4 class="text-[12px] leading-3 font-semibold text-third">Company</h4>
+                <h4 class="text-[12px] leading-3 text-third">Company</h4>
                 <ul class="col gap-4">
                     <li><a href="#" class="footer-links">About Us</a></li>
                     <li><a href="#" class="footer-links">Expert Panel</a></li>
@@ -68,7 +80,7 @@
                 </ul>
             </div>
             <div class="col gap-6">
-                <h4 class="text-[12px] leading-3 font-semibold text-third">Resources</h4>
+                <h4 class="text-[12px] leading-3 text-third">Resources</h4>
                 <ul class="col gap-4">
                     <li><a href="#" class="footer-links">Blog</a></li>
                     <li><a href="#" class="footer-links">Health Tools</a></li>
@@ -76,7 +88,7 @@
                 </ul>
             </div>
             <div class="col gap-6">
-                <h4 class="text-[12px] leading-3 font-semibold text-third">Support</h4>
+                <h4 class="text-[12px] leading-3 text-third">Support</h4>
                 <ul class="col gap-4">
                     <li><a href="#" class="footer-links">Privacy</a></li>
                     <li><a href="#" class="footer-links">Terms</a></li>
