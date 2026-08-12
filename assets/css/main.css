@@ -134,11 +134,11 @@
 }
 
 @utility nav-link{
-    @apply text-[14px] leading-3 font-semibold tracking-[0.6px] row text-nav-link hover:text-third transition-all duration-150
+    @apply text-[14px] leading-3 font-semibold tracking-[0.6px] row text-nav-link hover:text-third transition-all
 }
 
 @utility nav-button{
-    @apply bg-third py-2.5 px-6 rounded-full shadow-xs hover:opacity-90 active:scale-95 transition-all duration-150
+    @apply bg-third py-2.5 px-6 rounded-full shadow-xs hover:opacity-90 active:scale-95 transition-all
 }
 
 @utility nav-button-text{
@@ -159,7 +159,7 @@
 }
 
 @utility login-button{
-    @apply pt-[12.5px] md:pt-0 pb-[13.5px] md:pb-[17.59px] uppercase md:normal-case w-1/2 text-[12px] md:text-[24px] leading-3 md:leading-[33.6px] font-semibold md:font-secondary text-ninth/60 md:text-nav-link hover:text-third transition-all duration-150
+    @apply pt-[12.5px] md:pt-0 pb-[13.5px] md:pb-[17.59px] uppercase md:normal-case w-1/2 text-[12px] md:text-[24px] leading-3 md:leading-[33.6px] font-semibold md:font-secondary text-ninth/60 md:text-nav-link hover:text-third transition-all
 }
 
 @utility register-button{
@@ -171,27 +171,27 @@
 }
 
 @utility input-reg{
-    @apply border border-tenth/20 md:border-fifth/20 rounded-xl w-full py-4 pl-10 pr-4 placeholder:text-eighth md:placeholder:text-fourth focus:outline-none focus:ring-2 focus:ring-twelfth/20 focus:border-twelfth transition-all duration-150
+    @apply border border-tenth/20 md:border-fifth/20 rounded-xl w-full py-4 pl-10 pr-4 placeholder:text-eighth md:placeholder:text-fourth focus:outline-none focus:ring-2 focus:ring-twelfth/20 focus:border-twelfth transition-all
 }
 
 @utility signUp-button{
-    @apply bg-sixth py-4 rounded-xl text-[16px] md:text-[24px] leading-6 md:leading-[33.6px] font-normal md:font-semibold font-secondary text-white shadow-md hover:brightness-95 active:scale-[0.98] transition-all duration-150
+    @apply bg-sixth py-4 rounded-xl text-[16px] md:text-[24px] leading-6 md:leading-[33.6px] font-normal md:font-semibold font-secondary text-white shadow-md hover:brightness-95 active:scale-[0.98] transition-all
 }
 
 @utility social-divider{
     @apply px-3 md:px-4 uppercase text-[12px] leading-4 tracking-[1.2px] font-semibold text-fifth md:text-nav-link
 }
 @utility social-logins{
-    @apply py-3 md:py-3.5 px-[32.1px] md:px-[51.44px] flex gap-2 md:gap-3 border border-fifth/20 rounded-xl hover:bg-seventh transition-all duration-150 active:scale-[0.98]
+    @apply py-3 md:py-3.5 px-[32.1px] md:px-[51.44px] flex gap-2 md:gap-3 border border-fifth/20 rounded-xl hover:bg-seventh transition-all active:scale-[0.98]
 }
 /*end Register form section styles*/
 /*start Footer section styles*/
 @utility form_footer_links{
-    @apply uppercase text-[10px] leading-3.75 tracking-[1px] text-nav-link/60 hover:text-third transition-all duration-150
+    @apply uppercase text-[10px] leading-3.75 tracking-[1px] text-nav-link/60 hover:text-third transition-all
 }
 
 @utility footer-links{
-    @apply pt-0.5 pb-px text-[16px] leading-6 text-nav-link hover:text-third hover:underline transition-all duration-150
+    @apply pt-0.5 pb-px text-[16px] leading-6 text-nav-link hover:text-third hover:underline transition-all
 }
 
 @utility footer-input{
@@ -209,7 +209,7 @@
     @apply text-white bg-sixth shadow-first hover:brightness-90 transition-all duration-700 animate-moveUp
 }
 @utility second-hero-buttons{
-    @apply text-twelfth border-2 border-twelfth hover:bg-twelfth/5 transition-all duration-150
+    @apply text-twelfth border-2 border-twelfth hover:bg-twelfth/5 transition-all
 }
 /*end Hero section styles*/
 
@@ -227,7 +227,7 @@
     @apply text-[10px] leading-3.75 text-nav-link
 }
 @utility habit-tracker-button{
-    @apply text-[12px] leading-3 tracking-[0.6px] font-semibold text-twelfth border border-twelfth/20 rounded-lg py-2 hover:bg-twelfth/5 transition-all duration-150
+    @apply text-[12px] leading-3 tracking-[0.6px] font-semibold text-twelfth border border-twelfth/20 rounded-lg py-2 hover:bg-twelfth/5 transition-all
 }
 /*end Tools section styles*/
 
@@ -273,10 +273,10 @@
     @apply py-4 px-[30.84px] md:px-10 rounded-full text-[24px] leading-[33.6px] font-semibold font-secondary text-white
 }
 @utility meet-coaches-button{
-    @apply bg-sixth shadow-second hover:brightness-90 transition-all duration-150
+    @apply bg-sixth shadow-second hover:brightness-90 transition-all
 }
 @utility health-quiz-button{
-    @apply bg-white/10 border border-white/20 hover:bg-white/20 transition-all duration-150
+    @apply bg-white/10 border border-white/20 hover:bg-white/20 transition-all
 }
 /*end journey section styles*/
 
@@ -289,10 +289,10 @@
     @apply rounded-full py-[26.5px] px-12 text-[16px] leading-6 text-center font-secondary
 }
 @utility first-hero-buttons{
-    @apply text-white bg-sixth shadow-first hover:brightness-95 transition-all duration-150
+    @apply text-white bg-sixth shadow-first hover:brightness-95 transition-all
 }
 @utility second-hero-buttons{
-    @apply text-third border-2 border-third/20 hover:bg-third/5 transition-all duration-150
+    @apply text-third border-2 border-third/20 hover:bg-third/5 transition-all
 }
 /*end Hero section styles*/
 
@@ -301,7 +301,7 @@
     @apply py-2 px-6 rounded-full text-[16px] leading-6 text-center
 }
 @utility category-button-secondary{
-    @apply text-nav-link hover:bg-twentyFive/50 transition-all duration-150
+    @apply text-nav-link hover:bg-twentyFive/50 transition-all
 }
 @utility glass-category{
     background-color: rgba(239, 244, 255, 0.7);
@@ -315,7 +315,34 @@
 @utility property_service{
     @apply pt-3.75 pb-[0.59px] text-eleventh
 }
+@utility step_image{
+    @apply row justify-center rounded-full w-16 h-16 bg-seventeenth
+}
 /*end How It Works Section styles*/
+
+/*start Pricing Section styles*/
+@utility plan_type{
+    @apply py-[5.5px] px-4 w-fit rounded-full bg-third/10 text-[12px] leading-3 tracking-[0.6px] font-semibold text-third
+}
+@utility plan_name{
+    @apply pt-3.5 pb-[0.59px] text-eleventh
+}
+@utility plan_description{
+    @apply text-[14px] leading-5.25 text-nav-link
+}
+@utility plan_price{
+    @apply text-[32px] leading-[41.6px] font-semibold font-secondary text-third
+}
+@utility plan_price_month{
+    @apply text-[16px] leading-6 text-nav-link
+}
+@utility plan_properties{
+    @apply text-[14px] leading-5.25 text-eleventh
+}
+@utility plan_button{
+    @apply py-4 rounded-xl text-[12px] leading-3 tracking-[0.6px] font-semibold text-center
+}
+/*end Pricing Section styles*/
 
 /*end Services page styles*/
 
@@ -333,15 +360,14 @@
         @apply p-12 col gap-12 
     }
     .credibility_card{
-        @apply rounded-xl p-6 flex gap-6 bg-white shadow-first hover:shadow-second transition-all duration-150
+        @apply rounded-xl p-6 flex gap-6 bg-white shadow-first hover:shadow-second transition-all
     }
     .step_card{
         @apply rounded-3xl items-center bg-white text-center shadow-xs hover:shadow-md transition-shadow
     }
-    .step_image{
-        @apply row justify-center rounded-full w-16 h-16 bg-seventeenth
+    .plan_card{
+        @apply col rounded-3xl bg-white shadow-xs
     }
-
 }
 
 /*animation*/
