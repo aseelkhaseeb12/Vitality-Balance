@@ -46,6 +46,10 @@
     --color-twentyNine: #FFB534;
     --color-thirty: #233144;
     --color-thirtyOne: #EEF2FF;
+    --color-thirtyTwo: #E2E8F0;
+    --color-thirtThree: #CBD5E1;
+    --color-thirtyFour: #94A3B8;
+    --color-thirtyFive: #5865F2;
 
     --shadow-first: 0px 4px 20px rgba(51,65,85,0.05);
     --shadow-second: 0px 10px 30px rgba(51, 65, 85, 0.12);
@@ -54,6 +58,7 @@
 
     --background-image-radial-custom: radial-gradient(171.95% 122.92% at 100% 0%, #C2ECD2 0%, #F8F9FF 100%);
     --background-image-linear-custom: linear-gradient(180deg, rgba(95, 134, 112, 0) 0%, #5F8670 50%, rgba(95, 134, 112, 0) 100%);
+    --background-image-linear-instagram: linear-gradient(45deg, #FB923C 0%, #EC4899 50%, #9333EA 100%);
 
     --animate-moveUp: moveUp 700ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -408,6 +413,27 @@
 }
 /*end Contact section styles*/
 
+/*start Community section styles*/
+@utility community_icon{
+    @apply p-3 pb-4.5 rounded-xl
+}
+@utility community_status{
+    @apply py-1 px-3 rounded-full bg-third/5 text-[12px] leading-3 tracking-[0.6px] font-semibold text-third
+}
+@utility community_name{
+    @apply pt-3.75 pb-[0.59px] text-eleventh
+}
+@utility community_description{
+    @apply text-[14px] leading-5.25 text-nav-link
+}
+@utility community_borders{
+    @apply w-8 h-8 border-2 border-white rounded-full
+}
+@utility community_members{
+    @apply text-[12px] leading-3 tracking-[0.6px] font-bold text-eleventh
+}
+/*end Community section styles*/
+
 /*end Community page styles*/
 
 /*components*/
@@ -429,6 +455,9 @@
     }
     .plan_card{
         @apply col rounded-3xl bg-white shadow-xs
+    }
+    .community_card{
+        @apply col gap-2 p-6 border border-fourth/10 rounded-3xl bg-white shadow-first hover:shadow-second transition-all
     }
 }
 
