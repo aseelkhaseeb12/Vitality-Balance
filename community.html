@@ -55,11 +55,112 @@
             <div class="container col gap-3.75 pt-1 items-center">
                 <div class="py-1 px-4 rounded-full bg-thirteenth/10 text-[12px] leading-3 tracking-[0.6px] font-semibold text-center text-third">CONNECT WITH US</div>
                 <h1 class="pb-[0.8px] text-center text-third">Let's Connect</h1>
-                <p class="pt-[7.8px] pb-[0.6px] w-85.5 md:w-2xl text-[18px] leading-[28.8px] text-center text-nav-link">
+                <p class="pt-[7.8px] pb-[0.6px] w-85.5 sm:w-125 md:w-2xl text-[18px] leading-[28.8px] text-center text-nav-link">
                     Whether you're seeking guidance on your wellness journey, exploring partnership opportunities, or wanting to join our growing community, we're here to listen and grow with you.
                 </p>
             </div>
         </section>
+        <!-- Contact Section -->
+         <section class="py-20">
+            <div class="container grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 md:gap-[20px] lg:gap-20">
+                <!-- Info Column -->
+                <div class="col gap-6 md:col-span-2 lg:col-span-2 order-last md:order-0">
+                    <div class="col gap-6 p-6 bg-white border border-fourth/10 rounded-3xl shadow-first">
+                        <h3 class="pb-[0.59px] text-third">Direct Channels</h3>
+                        <div class="col gap-6">
+                            <div class="row">
+                                <div class="contact_icon">
+                                    <img src="./assets/imgs/community_images/contact_section/email.svg" alt="email icon">
+                                </div>
+                                <div class="col ms-4">
+                                    <p class="contact_type">Email Us</p>
+                                    <p class="contact_value">hello@vitalitybalance.com</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="contact_icon">
+                                    <img src="./assets/imgs/community_images/contact_section/call.svg" alt="call icon">
+                                </div>
+                                <div class="col ms-4">
+                                    <p class="contact_type">Call Directly</p>
+                                    <p class="contact_value">+1 (555) Wellness-24</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="contact_icon">
+                                    <img src="./assets/imgs/community_images/contact_section/location.svg" alt="location icon">
+                                </div>
+                                <div class="col ms-4">
+                                    <p class="contact_type">Studio HQ</p>
+                                    <p class="contact_value">72 Serenity Lane, Mindful Valley, CA</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative rounded-3xl shadow-first overflow-hidden">
+                        <div>
+                            <img class="w-full" src="./assets/imgs/community_images/contact_section/contact_img.webp" alt="contact image">
+                        </div>
+                        <div class="absolute inset-0 row justify-center bg-third/20">
+                            <div class="bg-white/90 w-fit row py-3 px-6 rounded-full backdrop-blur-md">
+                                <div>
+                                    <img src="./assets/imgs/community_images/contact_section/explore.svg" alt="explore icon">
+                                </div>
+                                <span class="ms-2  text-[12px] leading-3 tracking-[0.6px] font-semibold text-third">Explore our spaces</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Form Column -->
+                <div class="md:col-span-2 lg:col-span-3 order-first md:order-0 p-6 lg:p-12 border border-fourth/10 rounded-3xl bg-white shadow-first">
+                    <form class="col gap-6">
+                        <div class="col lg:flex-row gap-6">
+                            <div class="col gap-[12.5px] lg:w-1/2">
+                                <label for="Full Name" class="contact_label">Full Name</label>
+                                <input type="text" id="Full Name" name="fullname" class="contact_input" placeholder="Jane Doe">
+                            </div>
+                            <div class="col gap-[12.5px] lg:w-1/2">
+                                <label for="Email" class="contact_label">Email Address</label>
+                                <input type="email" id="Email" name="Email" class="contact_input" placeholder="jane@example.com">
+                            </div>
+                        </div>
+                        <div class="col gap-[12.5px]">
+                            <label class="contact_label">Nature of Inquiry</label>
+                            <div class="col lg:flex-row gap-4">
+                                <button class="inquiry-support-button border-2 border-twelfth hover:bg-twelfth/5 transition-all">
+                                    <div class="shrink-0">
+                                        <img src="./assets/imgs/community_images/contact_section/support.svg" alt="support icon">
+                                    </div>
+                                    <span class="ms-2 font-semibold text-twelfth">Support</span>
+                                </button>
+                                <button class="inquiry-support-button inquiry-support-buttons">
+                                    <div class="shrink-0">
+                                        <img src="./assets/imgs/community_images/contact_section/press.svg" alt="press icon">
+                                    </div>
+                                    <span class="ms-2 font-semibold text-nav-link">Press</span>
+                                </button>
+                                <button class="inquiry-support-button inquiry-support-buttons">
+                                    <div class="shrink-0">
+                                        <img src="./assets/imgs/community_images/contact_section/coaching.svg" alt="coaching icon">
+                                    </div>
+                                    <span class="ms-2 font-semibold text-nav-link">Coaching</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col gap-[12.5px]">
+                            <label for="" class="contact_label">How can we help?</label>
+                            <textarea name="" id="" class="pt-3 pb-15 md:pb-21 px-4 border border-fifth/20 rounded-xl placeholder:text-eighth focus:border-twelfth focus:ring-4 focus:ring-twelfth/10 transition-all outline-none" placeholder="Share your thoughts or questions here..."></textarea>
+                        </div>
+                        <button class="row justify-center py-4 rounded-xl bg-sixth shadow-lg hover:brightness-95 transition-all transform active:scale-95">
+                            <span class="text-[18px] leading-7 font-bold text-white text-center">Send Message</span>
+                            <div class="ms-2">
+                                <img src="./assets/imgs/community_images/contact_section/send.svg" alt="send icon">
+                            </div>
+                        </button>
+                    </form>
+                </div>
+            </div>
+         </section>
     </main>
     <footer class="bg-seventh py-12">
         <div class="container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">

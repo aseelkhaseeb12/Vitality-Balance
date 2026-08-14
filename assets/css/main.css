@@ -382,6 +382,34 @@
 
 /*end Services page styles*/
 
+/*start Community page styles*/
+
+/*start Contact section styles*/
+@utility contact_icon{
+    @apply p-3 pb-4.5 rounded-xl bg-third/5 shrink-0
+}
+@utility contact_type{
+    @apply text-[12px] leading-3 tracking-[0.6px] font-semibold text-nav-link
+}
+@utility contact_value{
+    @apply text-[16px] leading-6 font-semibold text-eleventh
+}
+@utility contact_label{
+    @apply text-[12px] leading-3 tracking-[0.6px] font-semibold text-nav-link
+}
+@utility contact_input{
+    @apply py-3.5 px-4 w-full block border border-fifth/20 rounded-xl text-eleventh placeholder:text-eighth focus:border-twelfth focus:ring-4 focus:ring-twelfth/10 transition-all outline-none
+}
+@utility inquiry-support-button{
+    @apply row py-3 px-[101.89px] sm:px-[52.08px] lg:px-9 xl:px-[52.08px] rounded-xl justify-center 
+}
+@utility inquiry-support-buttons{
+    @apply border-2 border-fifth/10 hover:border-twelfth/30 transition-all
+}
+/*end Contact section styles*/
+
+/*end Community page styles*/
+
 /*components*/
 @layer components{
     .card{
