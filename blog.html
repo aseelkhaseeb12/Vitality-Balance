@@ -6,8 +6,8 @@
     <title>Vitality & Balance</title>
     <link href="./assets/css/output.css" rel="stylesheet">
 </head>
-<body>
-    <header class="bg-nav/70 py-[22.22px] drop-shadow-xs">
+<body class="bg-secondaryC">
+    <header class="bg-nav/70 py-[22.22px] drop-shadow-xs sticky top-0 left-0 right-0 z-20 glass-nav">
         <div class="container row justify-between">
             <div class="row gap-2">
                 <a href="./index.html">
@@ -17,13 +17,13 @@
             <nav class="hidden lg:flex">
                 <ul class="row gap-6">
                     <li>
-                        <a href="./index.html" class="nav-link capitalize pb-1 border-b-2 border-b-third text-third">home</a>
+                        <a href="./index.html" class="nav-link capitalize">home</a>
                     </li>
                     <li>
                         <a href="./about.html" class="nav-link capitalize">about</a>
                     </li>
                     <li>
-                        <a href="./blog.html" class="nav-link capitalize">blog</a>
+                        <a href="./blog.html" class="nav-link capitalize pb-1 border-b-2 border-b-third text-third">blog</a>
                     </li>
                     <li>
                         <a href="./tools.html" class="nav-link capitalize">tools</a>
@@ -49,6 +49,48 @@
             </div>
         </div>
     </header>
+    <main>
+        <!-- Content Header & Category Chips -->
+        <section class="py-12">
+            <div class="container col lg:flex-row justify-between lg:items-end md:gap-[25px] lg:gap-[54.76px]">
+                <div>
+                    <h1 class="pb-[0.69px] text-eleventh xl:w-128.25">
+                        Knowledge for 
+                        <span class="text-third">Better Living.</span>
+                    </h1>
+                    <p class="xl:w-160.25 pb-[0.69px] text-[18px] leading-[28.8px] text-nav-link">
+                        Science-backed serenity and proactive wellness strategies tailored for your unique journey.
+                    </p>
+                </div>
+                <!-- Category Search & Filter Cluster -->
+                <div class="col gap-4 lg:items-end">
+                    <div class="flex relative md:w-80">
+                        <input type="text" name="search" class="w-full text-[16px] text-eighth py-3.5 px-6 bg-white border border-thirtySeven/10 rounded-xl focus:outline-none focus:ring-2 focus:ring-third/20 focus:border-third transition-all placeholder:text-eighth" placeholder="Search articles...">
+                        <div class="absolute right-3 top-3.5">
+                            <img src="./assets/imgs/blog_images/Content_Header_and_Category_Chips/search.svg" alt="search icon">
+                        </div>
+                    </div>
+                    <div class="row gap-2 pb-2 overflow-x-auto">
+                        <button class="py-2 px-6 rounded-full bg-third text-[12px] leading-3 tracking-[0.6px] font-semibold text-white text-center hover:brightness-95">
+                            All
+                        </button>
+                        <button class="py-2 px-6 rounded-full bg-seventeenth/30 text-[12px] leading-3 tracking-[0.6px] font-semibold text-eighteenth text-center hover:bg-seventeenth/50 transition-colors">
+                            Nutrition
+                        </button>
+                        <button class="py-2 px-6 rounded-full bg-twentieth/30 text-[12px] leading-3 tracking-[0.6px] font-semibold text-thirtyEight text-center hover:bg-twentieth/50 transition-colors">
+                            Fitness
+                        </button>
+                        <button class="py-2 px-6 rounded-full bg-twentyFive text-[12px] leading-3 tracking-[0.6px] font-semibold text-nav-link text-center hover:bg-twentyFour transition-colors">
+                            Mindfulness
+                        </button>
+                        <button class="py-2 px-6 rounded-full bg-twentyThree text-[12px] leading-3 tracking-[0.6px] font-semibold text-twentyTwo text-center hover:bg-twentyThree transition-colors">
+                            Sleep
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer class="bg-seventh py-12">
         <div class="container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
             <div class="col gap-6 pb-[40.41px]">
@@ -60,7 +102,7 @@
                 </p>
             </div>
             <div class="col gap-6">
-                <h4 class="text-[12px] leading-3 font-semibold text-third">Company</h4>
+                <h4 class="text-[12px] leading-3 text-third">Company</h4>
                 <ul class="col gap-4">
                     <li><a href="#" class="footer-links">About Us</a></li>
                     <li><a href="#" class="footer-links">Expert Panel</a></li>
@@ -68,7 +110,7 @@
                 </ul>
             </div>
             <div class="col gap-6">
-                <h4 class="text-[12px] leading-3 font-semibold text-third">Resources</h4>
+                <h4 class="text-[12px] leading-3 text-third">Resources</h4>
                 <ul class="col gap-4">
                     <li><a href="#" class="footer-links">Blog</a></li>
                     <li><a href="#" class="footer-links">Health Tools</a></li>
@@ -76,7 +118,7 @@
                 </ul>
             </div>
             <div class="col gap-6">
-                <h4 class="text-[12px] leading-3 font-semibold text-third">Support</h4>
+                <h4 class="text-[12px] leading-3 text-third">Support</h4>
                 <ul class="col gap-4">
                     <li><a href="#" class="footer-links">Privacy</a></li>
                     <li><a href="#" class="footer-links">Terms</a></li>
