@@ -54,6 +54,7 @@
     --color-thirtySeven: #0F172A;
     --color-thirtyEight: #663B3D;
     --color-thirtyNineth: #002113;
+    --color-fourty: #F1F5F9;
 
     --shadow-first: 0px 4px 20px rgba(51,65,85,0.05);
     --shadow-second: 0px 10px 30px rgba(51, 65, 85, 0.12);
@@ -439,6 +440,51 @@
 }
 /*end Community section styles*/
 
+/*start Article section styles*/
+@utility article_content{
+    @apply col justify-between p-6 md:w-69
+}
+@utility article_type{
+    @apply py-1 px-3 rounded-full text-[10px] leading-3.75 tracking-[0.5px] font-bold uppercase
+}
+@utility article_time_reading{
+    @apply text-[10px] leading-3.75 text-nav-link
+}
+@utility article_title{
+    @apply pb-2 text-eleventh
+}
+@utility article_description{
+    @apply mb-6 text-[14px] leading-5.25 text-nav-link overflow-hidden
+}
+@utility article_auther_image{
+    @apply w-6 h-6 border border-fourty rounded-full overflow-hidden
+}
+@utility article_auther_name{
+    @apply text-[11px] leading-[16.5px] text-nav-link
+}
+@utility article_arrow{
+    @apply hover:translate-x-1 transition-transform cursor-pointer
+}
+@utility pagination{
+    @apply row justify-center rounded-full w-10 h-10
+}
+@utility pagination_numbers{
+    @apply py-[14.5px] text-[12px] leading-3 tracking-[0.6px] font-semibold
+}
+@utility pagination_numbers_not_selected{
+    @apply text-nav-link hover:bg-seventeenth/30 transition-colors
+}
+@utility popular_item_number{
+    @apply text-[32px] leading-8 font-bold text-third/10
+}
+@utility popular_item_name{
+    @apply text-[12px] leading-3.75 tracking-[0.6px] font-semibold text-eleventh w-[137.39px] group-hover:text-third transition-colors
+}
+@utility popular_item_type{
+    @apply text-[10px] leading-3.75 font-medium text-nav-link
+}
+/*end Article section styles*/
+
 /*end Community page styles*/
 
 /*components*/
@@ -463,6 +509,9 @@
     }
     .community_card{
         @apply col gap-2 p-6 border border-fourth/10 rounded-3xl bg-white shadow-first hover:shadow-second transition-all
+    }
+    .article_card{
+        @apply col rounded-3xl w-full h-full bg-white shadow-first overflow-hidden hover:shadow-second hover:-translate-y-1 transition-all duration-300
     }
 }
 
