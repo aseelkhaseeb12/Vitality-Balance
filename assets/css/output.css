@@ -1398,6 +1398,19 @@
     --tw-leading: calc(var(--spacing) * 6);
     line-height: calc(var(--spacing) * 6);
   }
+  .filter_blog_buttons {
+    border-radius: calc(infinity * 1px);
+    padding-inline: calc(var(--spacing) * 6);
+    padding-block: calc(var(--spacing) * 2);
+    text-align: center;
+    font-size: 12px;
+    --tw-leading: calc(var(--spacing) * 3);
+    line-height: calc(var(--spacing) * 3);
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+    --tw-tracking: 0.6px;
+    letter-spacing: 0.6px;
+  }
   .category-button {
     border-radius: calc(infinity * 1px);
     padding-inline: calc(var(--spacing) * 6);
@@ -3184,14 +3197,14 @@
     .md\:gap-5 {
       gap: calc(var(--spacing) * 5);
     }
+    .md\:gap-6\.25 {
+      gap: calc(var(--spacing) * 6.25);
+    }
     .md\:gap-12 {
       gap: calc(var(--spacing) * 12);
     }
     .md\:gap-\[22\.8px\] {
       gap: 22.8px;
-    }
-    .md\:gap-\[25px\] {
-      gap: 25px;
     }
     .md\:p-12 {
       padding: calc(var(--spacing) * 12);
@@ -3361,9 +3374,6 @@
     }
     .lg\:p-20 {
       padding: calc(var(--spacing) * 20);
-    }
-    .lg\:py-0 {
-      padding-block: 0px;
     }
     .lg\:text-start {
       text-align: start;

@@ -440,6 +440,16 @@
 }
 /*end Community section styles*/
 
+/*end Community page styles*/
+
+/*start Blog page styles*/
+
+/* start Content Header & Category Chips section styles*/
+@utility filter_blog_buttons{
+    @apply py-2 px-6 rounded-full text-[12px] leading-3 tracking-[0.6px] font-semibold text-center
+}
+/* end Content Header & Category Chips section styles*/
+
 /*start Article section styles*/
 @utility article_content{
     @apply col justify-between p-6 md:w-69
@@ -485,7 +495,7 @@
 }
 /*end Article section styles*/
 
-/*end Community page styles*/
+/*end Blog page styles*/
 
 /*components*/
 @layer components{
