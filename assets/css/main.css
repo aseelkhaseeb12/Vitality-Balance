@@ -145,7 +145,7 @@
 }
 
 @utility nav-link{
-    @apply text-[14px] leading-3 font-semibold tracking-[0.6px] row text-nav-link hover:text-third transition-all
+    @apply text-[14px] leading-3 font-semibold tracking-[0.6px] row text-nav-link uppercase hover:text-third transition-all
 }
 
 @utility nav-button{
@@ -153,7 +153,7 @@
 }
 
 @utility nav-button-text{
-    @apply text-xs leading-3 font-semibold tracking-[1.2px] text-white text-center
+    @apply text-xs leading-3 font-semibold tracking-[1.2px] text-white text-center uppercase
 }
 
 @utility image-profile{

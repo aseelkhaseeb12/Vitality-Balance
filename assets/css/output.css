@@ -453,9 +453,6 @@
   .mb-\[45\.71px\] {
     margin-bottom: 45.71px;
   }
-  .ml-2 {
-    margin-left: calc(var(--spacing) * 2);
-  }
   .step_image {
     display: flex;
     align-items: center;
@@ -673,6 +670,7 @@
     --tw-tracking: 0.6px;
     letter-spacing: 0.6px;
     color: var(--color-nav-link);
+    text-transform: uppercase;
     transition-property: all;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
@@ -993,9 +991,6 @@
   .w-85\.5 {
     width: calc(var(--spacing) * 85.5);
   }
-  .w-\[10\%\] {
-    width: 10%;
-  }
   .w-\[40\.23\%\] {
     width: 40.23%;
   }
@@ -1181,9 +1176,6 @@
   .grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
-  .grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
   .flex-col {
     flex-direction: column;
   }
@@ -1297,19 +1289,6 @@
   }
   .overflow-x-auto {
     overflow-x: auto;
-  }
-  .footer-input {
-    border-radius: var(--radius-lg);
-    border-style: var(--tw-border-style);
-    border-width: 1px;
-    border-color: color-mix(in srgb, #C1C8C1 30%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      border-color: color-mix(in oklab, var(--color-fourth) 30%, transparent);
-    }
-    background-color: var(--color-white);
-    padding-inline: calc(var(--spacing) * 4);
-    padding-block: 10.5px;
-    font-size: 14px;
   }
   .habit-tracker-button {
     border-radius: var(--radius-lg);
@@ -2332,12 +2311,6 @@
   .pb-\[0\.89px\] {
     padding-bottom: 0.89px;
   }
-  .pb-\[2\.59px\] {
-    padding-bottom: 2.59px;
-  }
-  .pb-\[12\.59px\] {
-    padding-bottom: 12.59px;
-  }
   .pb-\[40\.41px\] {
     padding-bottom: 40.41px;
   }
@@ -2355,6 +2328,7 @@
     --tw-tracking: 1.2px;
     letter-spacing: 1.2px;
     color: var(--color-white);
+    text-transform: uppercase;
   }
   .text-center {
     text-align: center;
@@ -2672,12 +2646,6 @@
   }
   .text-nav-link {
     color: var(--color-nav-link);
-  }
-  .text-nav-link\/60 {
-    color: color-mix(in srgb, #414843 60%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      color: color-mix(in oklab, var(--color-nav-link) 60%, transparent);
-    }
   }
   .text-ninth {
     color: var(--color-ninth);
@@ -3306,9 +3274,6 @@
     .lg\:row {
       display: flex;
       align-items: center;
-    }
-    .lg\:block {
-      display: block;
     }
     .lg\:flex {
       display: flex;
