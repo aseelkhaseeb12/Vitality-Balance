@@ -15,7 +15,7 @@
                 </a>
             </div>
             <nav class="hidden lg:flex">
-                <ul class="row gap-8">
+                <ul class="row gap-4">
                     <li>
                         <a href="./index.html" class="nav-link">home</a>
                     </li>
@@ -51,28 +51,21 @@
     </header>
     <main>
         <section class="bg-secondaryC pb-12">
-            <div class="container sm:w-120 pt-4 pb-12 mx-auto col gap-8 text-third">
+            <div class="container px-6 md:px-0 sm:w-120 pt-4 pb-12 mx-auto col gap-8 text-third">
                 <div class="block md:hidden col gap-1.75">
-                    <h2 class="text-[32px] leading-[38.4px] font-semibold">Create an account</h2>
-                    <p class="pb-[0.8px] text-[18px] leading-[28.8px] text-ninth/80">Start your wellness journey.</p>
+                    <h2 class="text-[32px] leading-[38.4px] font-semibold">Welcome back</h2>
+                    <p class="pb-[0.8px] text-[18px] leading-[28.8px] text-ninth/80">Enter your details to continue your wellness journey.</p>
                 </div>
                 <div class="auth-card">
                     <div class="top-headers">
-                        <button class="login-button">
+                        <button class="auth-car-button auth-car-selected-button">
                             Login
                         </button>
-                        <button class="register-button">
+                        <button class="auth-car-button auth-car-not-selected-button">
                             Register
                         </button>
                     </div>
                     <form class="col gap-6">
-                        <div class="col gap-2">
-                            <label for="name" class="label-reg">Full Name</label>
-                            <div class="relative">
-                                <img class="absolute top-1/2 -translate-y-1/2 left-3.5" src="./assets/imgs/form_icons/avatar.svg" alt="avatar image">
-                                <input type="text" name="name" id="name" placeholder="Jane Doe" class="input-reg">
-                            </div>
-                        </div>
                         <div class="col gap-2">
                             <label for="email" class="label-reg">Email Address</label>
                             <div class="relative">
@@ -81,7 +74,10 @@
                             </div>
                         </div>
                         <div class="col gap-2">
-                            <label for="password" class="label-reg">Password</label>
+                            <div class="row justify-between label-reg">
+                                <label for="password">Password</label>
+                                <a href="#">FORGOT?</a>
+                            </div>
                             <div class="relative">
                                 <img class="absolute top-1/2 -translate-y-1/2 left-3.5" src="./assets/imgs/form_icons/password.svg" alt="password image">
                                 <input type="text" name="password" id="password" placeholder="••••••••" class="input-reg">
@@ -89,12 +85,8 @@
                                     <img src="./assets/imgs/form_icons/eye.svg" alt="eye image">
                                 </button>
                             </div>
-                            <div class="flex gap-1.5 px-1">
-                                <img src="./assets/imgs/form_icons/warning.svg" alt="warning image">
-                                <p class="text-[11px] md:text-[12px] leading-[17.88px] md:leading-4 font-normal text-fifth md:text-nav-link/80">Must be at least 8 characters with one special symbol.</p>
-                            </div>
                         </div>
-                        <button class="signUp-button">Sign Up</button>
+                        <button class="signUp-button">Login to Dashboard</button>
                         <div class="py-1.5 md:py-4 flex items-center justify-between">
                             <div class="h-px bg-fourth/30 w-16 md:w-[114.14px]"></div>
                             <p class="social-divider">or continue with</p>
@@ -111,19 +103,19 @@
                             </button>
                         </div>
                         <p class="hidden md:block pt-4 text-center text-[16px] leading-6 text-nav-link">
-                            Already have an account?
-                            <a href="./login.html" class="text-third hover:underline">Log In</a>
+                            Don't have an account?
+                            <a href="./register.html" class="text-third hover:underline">Join the community</a>
                         </p>
                     </form>
                 </div>
                 <div class="col gap-4 lg:hidden">
                     <p class="pt-4 text-center text-[16px] leading-6 text-nav-link">
-                        Already have an account?
-                        <a href="./login.html" class="text-third hover:underline">Log In</a>
+                        Don't have an account?
+                        <a href="./register.html" class="text-third hover:underline">Join the community</a>
                     </p>
                     <div class="text-[12px] leading-[19.5px] text-fifth text-center">
                         <p>
-                            By clicking "Sign Up", you agree to our 
+                            By clicking "Login", you agree to our 
                             <span>
                                 <a href="#" class="underline">Terms of</a>
                                 <br/>

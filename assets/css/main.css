@@ -164,31 +164,27 @@
 @utility auth-card{
     @apply bg-white flex flex-col gap-8 p-6 md:p-10 rounded-3xl shadow-first hover:shadow-second
 }
-
 @utility top-headers{
     @apply flex text-center border-b border-b-fourth/30
 }
-
-@utility login-button{
-    @apply pt-[12.5px] md:pt-0 pb-[13.5px] md:pb-[17.59px] uppercase md:normal-case w-1/2 text-[12px] md:text-[24px] leading-3 md:leading-[33.6px] font-semibold md:font-secondary text-ninth/60 md:text-nav-link hover:text-third transition-all
+@utility auth-car-button{
+    @apply uppercase md:normal-case w-1/2 text-[12px] md:text-[24px] leading-3 md:leading-[33.6px] font-semibold md:font-secondary
 }
-
-@utility register-button{
-    @apply py-3 md:pb-[17.59px] uppercase md:normal-case w-1/2 text-[12px] md:text-[24px] leading-3 md:leading-[33.6px] font-semibold md:font-secondary text-third border-b-2 border-b-third
+@utility auth-car-not-selected-button{
+    @apply pt-[12.5px] md:py-3 pb-[13.5px] md:pb-[17.59px] text-ninth/60 md:text-nav-link hover:text-third transition-all
 }
-
+@utility auth-car-selected-button{
+    @apply py-3 md:pb-[17.59px] text-third border-b-2 border-b-third
+}
 @utility label-reg{
     @apply text-[12px] leading-3 font-semibold text-fifth md:text-nav-link
 }
-
 @utility input-reg{
     @apply border border-tenth/20 md:border-fifth/20 rounded-xl w-full py-4 pl-10 pr-4 placeholder:text-eighth md:placeholder:text-fourth focus:outline-none focus:ring-2 focus:ring-twelfth/20 focus:border-twelfth transition-all
 }
-
 @utility signUp-button{
     @apply bg-sixth py-4 rounded-xl text-[16px] md:text-[24px] leading-6 md:leading-[33.6px] font-normal md:font-semibold font-secondary text-white shadow-md hover:brightness-95 active:scale-[0.98] transition-all
 }
-
 @utility social-divider{
     @apply px-3 md:px-4 uppercase text-[12px] leading-4 tracking-[1.2px] font-semibold text-fifth md:text-nav-link
 }
