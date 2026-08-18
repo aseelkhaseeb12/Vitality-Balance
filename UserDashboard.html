@@ -137,6 +137,148 @@
                         </div>
                     </div>
                 </div>
+                <!-- Two-Column Layout -->
+                <div class="container grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Section - Habits Module (2/3 width on large screens) -->
+                    <div class="col-span-2 col gap-6 pb-3.5">
+                        <div class="row justify-between">
+                            <h3 class="text-[16px] leading-6 font-secondary text-eleventh">Daily Habits</h3>
+                            <button class="text-[16px] leading-6 text-third text-center hover:underline">Edit List</button>
+                        </div>
+                        <div class="col rounded-3xl bg-white shadow-first">
+                            <!-- Habit Item -->
+                            <div class="habit_item hover:bg-seventh transition-colors">
+                                <div class="row gap-6">
+                                    <span class="habit-item-image bg-seventeenth/20">
+                                        <img src="./assets/imgs/user_dashboard_images/meditation person.svg" alt="meditation person icon">
+                                    </span>
+                                    <div class="col">
+                                        <p class="habit-item-name text-eleventh">10-Min Meditation</p>
+                                        <p class="text-[16px] leading-6 text-nav-link">Focus on deep breathing</p>
+                                    </div>
+                                </div>
+                                <button class="group habit-item-button border-2 border-third/20 hover:bg-third transition-all">
+                                    <svg class="w-[16.30px] h-3 fill-current text-third group-hover:text-white transition-all" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M530.8 134.1C545.1 144.5 548.3 164.5 537.9 178.8L281.9 530.8C276.4 538.4 267.9 543.1 258.5 543.9C249.1 544.7 240 541.2 233.4 534.6L105.4 406.6C92.9 394.1 92.9 373.8 105.4 361.3C117.9 348.8 138.2 348.8 150.7 361.3L252.2 462.8L486.2 141.1C496.6 126.8 516.6 123.6 530.9 134z"/></svg>
+                                </button>
+                            </div>
+                            <!-- Habit Item (Checked) -->
+                            <div class="habit_item border border-fourth/10 bg-seventeenth/5">
+                                <div class="row gap-6">
+                                    <span class="habit-item-image bg-third">
+                                        <img src="./assets/imgs/user_dashboard_images/drink.svg" alt="drink icon">
+                                    </span>
+                                    <div class="col">
+                                        <p class="habit-item-name text-nav-link line-through">Drink morning Matcha</p>
+                                        <p class="text-[16px] leading-6 text-nav-link">Swap coffee for tea</p>
+                                    </div>
+                                </div>
+                                <button class="habit-item-button bg-third">
+                                    <img src="./assets/imgs/user_dashboard_images/double_check.svg" alt="double check icon">
+                                </button>
+                            </div>
+                            <!-- Habit Item -->
+                            <div class="habit_item border-t border-fourth/10 hover:bg-seventh transition-colors">
+                                <div class="row gap-6">
+                                    <span class="habit-item-image bg-twentieth/20">
+                                        <img src="./assets/imgs/user_dashboard_images/Light_Stretching.svg" alt="Light Stretching icon">
+                                    </span>
+                                    <div class="col">
+                                        <p class="habit-item-name text-eleventh">Light Stretching</p>
+                                        <p class="text-[16px] leading-6 text-nav-link">Mobility for hip flexors</p>
+                                    </div>
+                                </div>
+                                <button class="group habit-item-button border-2 border-third/20 hover:bg-third transition-all">
+                                    <svg class="w-[16.30px] h-3 fill-current text-third group-hover:text-white transition-all" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M530.8 134.1C545.1 144.5 548.3 164.5 537.9 178.8L281.9 530.8C276.4 538.4 267.9 543.1 258.5 543.9C249.1 544.7 240 541.2 233.4 534.6L105.4 406.6C92.9 394.1 92.9 373.8 105.4 361.3C117.9 348.8 138.2 348.8 150.7 361.3L252.2 462.8L486.2 141.1C496.6 126.8 516.6 123.6 530.9 134z"/></svg>
+                                </button>
+                            </div>
+                            <!-- Empty State Insight inside Module -->
+                            <div class="col p-12 border-t border-fourth/10 items-center">
+                                <div class="mb-6 row justify-center rounded-full bg-seventh w-16 h-16">
+                                    <img src="./assets/imgs/user_dashboard_images/document.svg" alt="document icon">
+                                </div>
+                                <h4 class="text-[16px] leading-6 font-normal font-secondary text-center text-nav-link">Looking to grow?</h4>
+                                <p class="mt-2 md:w-[315.76px] text-[16px] leading-6 text-nav-link text-center">
+                                    Log your first habit for the evening or create a custom goal to stay accountable.
+                                </p>
+                                <button class="mt-6 py-4 px-12 rounded-full bg-third text-[16px] leading-6 text-white text-center hover:scale-105 transition-transform">
+                                    Add New Habit
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Section - Coaching Module (1/3 width) -->
+                    <div class="col gap-6">
+                        <h3 class="text-[16px] leading-6 font-secondary text-eleventh">Coaching</h3>
+                        <div class="col gap-6 p-6 rounded-3xl bg-white shadow-first">
+                            <div class="flex gap-6">
+                                <div class="rounded-2xl shadow-xs overflow-hidden w-[52.25px] h-14">
+                                    <img src="./assets/imgs/user_dashboard_images/coachImage.webp" alt="coach image">
+                                </div>
+                                <div class="col">
+                                    <p class="text-[16px] leading-6 font-bold text-eleventh">Coach Sarah</p>
+                                    <p class="text-[16px] leading-6 text-nav-link md:w-27.5">Holistic Health Specialist</p>
+                                </div>
+                            </div>
+                            <div class="col gap-2 p-6 border border-fourth/10 rounded-xl bg-seventh">
+                                <p class="text-[16px] leading-6 italic text-nav-link">
+                                    "Great work on your water intake yesterday! How are you feeling today?"
+                                </p>
+                                <a href="#" class="row gap-2 hover:underline">
+                                    <span class="text-[16px] leading-6 text-third">Reply to Sarah</span>
+                                    <div>
+                                        <img src="./assets/imgs/user_dashboard_images/arrow.svg" alt="arrow icon">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col gap-4 pb-6">
+                                <div class="row justify-between">
+                                    <p class="text-[16px] leading-6 text-nav-link">Monthly Progress</p>
+                                    <span class="text-[16px] leading-6 text-third">65%</span>
+                                </div>
+                                <div class="h-2 rounded-full bg-twentyThree/30 overflow-hidden">
+                                    <div class="h-full rounded-full bg-third w-[65%]"></div>
+                                </div>
+                            </div>
+                            <button class="py-6 rounded-xl border-2 border-third/20 text-[16px] leading-6 text-third text-center hover:bg-third/5 transition-colors">
+                                View Session History
+                            </button>
+                        </div>
+                        <!-- Weekly Progress Dots -->
+                        <div class="col gap-6 p-6 rounded-3xl bg-white shadow-first">
+                            <p class="text-[16px] leading-6 text-nav-link text-center">WEEKLY FREQUENCY</p>
+                            <div class="row justify-between px-2">
+                                <div class="col gap-2">
+                                    <span class="weekly-progress-dots bg-third"></span>
+                                    <span class="weekly-progress-letter text-eleventh">M</span>
+                                </div>
+                                <div class="col gap-2">
+                                    <span class="weekly-progress-dots bg-third"></span>
+                                    <span class="weekly-progress-letter text-eleventh">T</span>
+                                </div>
+                                <div class="col gap-2">
+                                    <span class="weekly-progress-dots bg-third"></span>
+                                    <span class="weekly-progress-letter text-eleventh">W</span>
+                                </div>
+                                <div class="col gap-2">
+                                    <span class="weekly-progress-dots bg-third"></span>
+                                    <span class="weekly-progress-letter text-eleventh">T</span>
+                                </div>
+                                <div class="col gap-2">
+                                    <span class="weekly-progress-dots bg-third"></span>
+                                    <span class="weekly-progress-letter text-eleventh">F</span>
+                                </div>
+                                <div class="col gap-2">
+                                    <span class="weekly-progress-dots bg-fourth/30"></span>
+                                    <span class="weekly-progress-letter text-nav-link">S</span>
+                                </div>
+                                <div class="col gap-2">
+                                    <span class="weekly-progress-dots bg-fourth/30"></span>
+                                    <span class="weekly-progress-letter text-nav-link">S</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
     </div>
