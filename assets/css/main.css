@@ -493,6 +493,27 @@
 
 /*end Blog page styles*/
 
+/*start UserDashboard page styles*/
+
+/*start Aside - Sidebar Navigation (Desktop) - section styles*/
+
+@utility sidebar-link{
+    @apply row gap-4 py-6 px-4 rounded-xl hover:bg-twentyFour transition-all
+}
+@utility sidebar-link-name{
+    @apply text-[16px] leading-6 uppercase
+}
+@utility sidebar-non-selected-link-color{
+    @apply  text-nav-link
+}
+@utility sidebar-selected-link-color{
+    @apply  text-white
+}
+
+/*end Aside - Sidebar Navigation (Desktop) - section styles*/
+
+/*end UserDashboard page styles*/
+
 /*components*/
 @layer components{
     .card{
