@@ -509,8 +509,16 @@
 @utility sidebar-selected-link-color{
     @apply  text-white
 }
-
 /*end Aside - Sidebar Navigation (Desktop) - section styles*/
+
+/*start Stat Band section styles*/
+@utility stat-band-card{
+    @apply rounded-3xl shadow-first hover:shadow-second hover:-translate-y-1 transition-all
+}
+@utility streak-bar-card-polygon{
+    @apply flex-1 h-6 rounded-full
+}
+/*end Stat Band section styles*/
 
 /*end UserDashboard page styles*/
 
