@@ -10,6 +10,7 @@
       "Courier New", monospace;
     --color-amber-300: oklch(87.9% 0.169 91.605);
     --color-purple-400: oklch(71.4% 0.203 305.504);
+    --color-pink-400: oklch(71.8% 0.202 349.761);
     --color-white: #FFFFFF;
     --spacing: 0.25rem;
     --container-md: 28rem;
@@ -840,6 +841,9 @@
   .h-\[16\.01px\] {
     height: 16.01px;
   }
+  .h-\[400px\] {
+    height: 400px;
+  }
   .h-fit {
     height: fit-content;
   }
@@ -1075,6 +1079,9 @@
   }
   .w-\[288px\] {
     width: 288px;
+  }
+  .w-\[342px\] {
+    width: 342px;
   }
   .w-\[357\.27px\] {
     width: 357.27px;
@@ -1563,6 +1570,9 @@
   .rounded-4xl {
     border-radius: var(--radius-4xl);
   }
+  .rounded-\[24px\] {
+    border-radius: 24px;
+  }
   .rounded-\[48px\] {
     border-radius: 48px;
   }
@@ -1946,6 +1956,9 @@
     @supports (color: color-mix(in lab, red, red)) {
       background-color: color-mix(in oklab, var(--color-nineteenth) 30%, transparent);
     }
+  }
+  .bg-pink-400 {
+    background-color: var(--color-pink-400);
   }
   .bg-purple-400 {
     background-color: var(--color-purple-400);
@@ -2350,6 +2363,9 @@
   }
   .py-\[22\.22px\] {
     padding-block: 22.22px;
+  }
+  .py-\[24px\] {
+    padding-block: 24px;
   }
   .py-\[25\.5px\] {
     padding-block: 25.5px;
@@ -3478,6 +3494,9 @@
     }
     .md\:h-150 {
       height: calc(var(--spacing) * 150);
+    }
+    .md\:w-0 {
+      width: 0px;
     }
     .md\:w-1\/2 {
       width: calc(1 / 2 * 100%);
