@@ -543,6 +543,19 @@
 
 /*end UserDashboard page styles*/
 
+/* start Article detail page styles */
+
+/* start Aside - Sidebar: Table of Contents section */
+@utility article-table-content-link{
+    @apply text-[14px] leading-5 text-nav-link hover:text-third transition-all
+}
+@utility article-table-content-link-active{
+    @apply text-[14px] leading-5 font-semibold text-third ps-3 border-s-2 border-third hover:text-third transition-all
+}
+/* end Aside - Sidebar: Table of Contents section */
+
+/* end Article detail page styles */
+
 /*components*/
 @layer components{
     .card{
