@@ -443,6 +443,23 @@
   .mx-auto {
     margin-inline: auto;
   }
+  .related-article-name {
+    margin-block: 6.5px;
+    font-size: 18px;
+    --tw-leading: calc(var(--spacing) * 7);
+    line-height: calc(var(--spacing) * 7);
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-eleventh);
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        color: var(--color-third);
+      }
+    }
+  }
   .my-3 {
     margin-block: calc(var(--spacing) * 3);
   }
@@ -499,9 +516,6 @@
   .mb-12 {
     margin-bottom: calc(var(--spacing) * 12);
   }
-  .mb-20 {
-    margin-bottom: calc(var(--spacing) * 20);
-  }
   .mb-\[22\.86px\] {
     margin-bottom: 22.86px;
   }
@@ -528,9 +542,6 @@
   }
   .mb-\[23\.99px\] {
     margin-bottom: 23.99px;
-  }
-  .mb-\[24\.29px\] {
-    margin-bottom: 24.29px;
   }
   .mb-\[45\.71px\] {
     margin-bottom: 45.71px;
@@ -751,6 +762,24 @@
     }
     @media (width >= 48rem) {
       padding: calc(var(--spacing) * 10);
+    }
+  }
+  .related-article-card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: var(--radius-3xl);
+    background-color: var(--color-white);
+    --tw-shadow: 0 1px 2px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.05));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    transition-property: all;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+    &:hover {
+      @media (hover: hover) {
+        --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+        box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+      }
     }
   }
   .coach-card {
@@ -1276,6 +1305,21 @@
       --tw-scale-y: 95%;
       --tw-scale-z: 95%;
       scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
+  }
+  .related-article-image {
+    transition-property: transform, translate, scale, rotate;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+    --tw-duration: 500ms;
+    transition-duration: 500ms;
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        --tw-scale-x: 105%;
+        --tw-scale-y: 105%;
+        --tw-scale-z: 105%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
     }
   }
   .scale-105 {
@@ -2488,6 +2532,12 @@
   .py-\[25\.5px\] {
     padding-block: 25.5px;
   }
+  .py-\[47px\] {
+    padding-block: 47px;
+  }
+  .py-\[48px\] {
+    padding-block: 48px;
+  }
   .py-\[102\.41px\] {
     padding-block: 102.41px;
   }
@@ -2543,6 +2593,13 @@
     font-size: 14px;
     --tw-leading: calc(var(--spacing) * 5.25);
     line-height: calc(var(--spacing) * 5.25);
+    color: var(--color-nav-link);
+  }
+  .related-article-description {
+    padding-top: 1.5px;
+    font-size: 14px;
+    --tw-leading: calc(var(--spacing) * 5);
+    line-height: calc(var(--spacing) * 5);
     color: var(--color-nav-link);
   }
   .story-description {
@@ -2665,6 +2722,9 @@
   }
   .pt-\[25\.3px\] {
     padding-top: 25.3px;
+  }
+  .pt-\[30\.5px\] {
+    padding-top: 30.5px;
   }
   .pt-\[33\.2px\] {
     padding-top: 33.2px;
@@ -2873,6 +2933,16 @@
     --tw-tracking: 0.6px;
     letter-spacing: 0.6px;
     color: var(--color-nav-link);
+  }
+  .related-article-type {
+    font-size: 10px;
+    --tw-leading: calc(var(--spacing) * 3.75);
+    line-height: calc(var(--spacing) * 3.75);
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+    --tw-tracking: 0.5px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
   }
   .label-reg {
     font-size: 12px;

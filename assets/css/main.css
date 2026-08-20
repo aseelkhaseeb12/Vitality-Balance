@@ -576,11 +576,29 @@
 }
 /* end article list section */
 
-/* start author button */
+/* start author button section */
 @utility article-author-button{
     @apply py-1 px-4 rounded-full border border-third text-[12px] leading-4 font-bold text-third text-center hover:bg-third/5 transition-colors
 }
-/* start author button */
+/* end author button section */
+
+/* start Related Articles Section section */
+@utility related-article-card{
+    @apply col rounded-3xl bg-white shadow-xs overflow-hidden hover:shadow-md transition-all
+}
+@utility related-article-image{
+    @apply group-hover:scale-105 transition-transform duration-500
+}
+@utility related-article-type{
+    @apply text-[10px] leading-3.75 tracking-[0.5px] font-bold uppercase
+}
+@utility related-article-name{
+    @apply my-[6.5px] text-[18px] leading-7 font-bold text-eleventh group-hover:text-third transition-colors
+}
+@utility related-article-description{
+    @apply pt-[1.5px] text-[14px] leading-5 text-nav-link
+}
+/* end Related Articles Section section */
 
 /* end Article detail page styles */
 
