@@ -96,11 +96,11 @@
             </div>
         </section>
         <!-- Main Content Layout -->
-        <section class="pt-12 pb-20 bg-purple-300">
-            <div class="container grid grid-cols-12 gap-20 bg-amber-200">
+        <section class="pt-12 pb-20">
+            <div class="container grid grid-cols-1 lg:grid-cols-12 gap-20">
                 <!-- Aside - Sidebar: Table of Contents -->
                 <aside class="hidden lg:block lg:col-span-3">
-                    <div class="col gap-6">
+                    <div class="col gap-6 sticky top-32">
                         <h3 class="pb-2 border-b border-fifth/10 text-[12px] leading-3 tracking-[0.6px] font-semibold text-nav-link">
                             TABLE OF CONTENTS
                         </h3>
@@ -122,7 +122,176 @@
                     </div>
                 </aside>
                 <!-- Article Body -->
-                <!-- <div class="col-span-8"></div> -->
+                <div class="lg:col-span-9">
+                    <p class="text-[18px] leading-[30.6px] text-eleventh mb-[23.58px]">
+                        For decades, the mantra of weight management has been simple: "calories in, calories out." However, emerging research in chronobiology suggests that <i>when</i> we eat may be just as critical as <i>what</i> we eat. Our internal master clock, located in the hypothalamus, coordinates every metabolic process in the body to follow a 24-hour rhythm.
+                    </p>
+                    <h3 class="pt-[23.9px] pb-[0.59px] text-eleventh mb-[23.28px]">
+                        The 24-Hour Biological Rhythm
+                    </h3>
+                    <p class="pb-[24.9px] text-[16px] leading-[27.2px] text-eleventh mb-[23.57px]">
+                        Every cell in your body has a "clock." These peripheral clocks regulate gene expression related to insulin sensitivity, fat oxidation, and even the production of hunger hormones like ghrelin and leptin. When we eat out of sync with these rhythms—such as late-night snacking—we create metabolic friction.
+                    </p>
+                    <!-- Blockquote - Pull Quote -->
+                    <blockquote class="col gap-6 pt-[7.4px] pb-[7.99px] ps-6 border-s-4 border-third mb-[23.29px]">
+                        <p class="text-[24px] leading-[40.8px] font-semibold font-secondary text-third">
+                            "The body is not a static furnace; it is a rhythmic engine that prioritizes different functions based on the sun's position."
+                        </p>
+                        <cite class="text-[12px] leading-3 tracking-[0.6px] font-semibold text-nav-link">
+                            — DR. ELENA VANCE
+                        </cite>
+                    </blockquote>
+                    <p class="pt-[24.09px] text-[16px] leading-[27.2px] text-eleventh mb-[23.48px]">
+                        During the daylight hours, our bodies are optimized for digestion and energy utilization. As night falls, the system shifts toward cellular repair and detoxification. Interrupting this repair phase with heavy caloric intake has been linked to increased inflammation and weight gain.
+                    </p>
+                    <h3 class="pt-[23.9px] pb-[0.59px] text-eleventh mb-[23.1px]">
+                        Timing and Metabolic Efficiency
+                    </h3>
+                    <!-- Inline Infographic Placeholder -->
+                    <div class="col gap-6 p-6 pt-[48.9px] md:p-12 md:pt-[72.9px] border border-fifth/5 rounded-3xl bg-seventh shadow-xs mb-[23.1px] md:mb-[86.8px]">
+                        <h4 class="text-[14px] leading-5 font-bold font-secondary text-center text-third">
+                            THE METABOLIC PEAK WINDOW
+                        </h4>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <div class="infographic-card pb-12">
+                                <div>
+                                    <img src="./assets/imgs/article_detail_images/article_body_section/sun.svg" alt="sun icon">
+                                </div>
+                                <p class="infographic-name">Morning (7AM-10AM)</p>
+                                <p class="infographic-description">
+                                    High insulin sensitivity. Peak carbohydrate processing.
+                                </p>
+                            </div>
+                            <div class="infographic-card pb-[64.39px] border-2 border-third/20">
+                                <div>
+                                    <img src="./assets/imgs/article_detail_images/article_body_section/mid_day_sun.svg" alt="mid day sun icon">
+                                </div>
+                                <p class="infographic-name">Mid-Day (12PM-2PM)</p>
+                                <p class="infographic-description pb-[0.58px]">
+                                    Maximum metabolic rate. Ideal for largest meal.
+                                </p>
+                            </div>
+                            <div class="infographic-card pb-[68.39px]">
+                                <div>
+                                    <img src="./assets/imgs/article_detail_images/article_body_section/moon.svg" alt="moon icon">
+                                </div>
+                                <p class="infographic-name">Evening (7PM+)</p>
+                                <p class="infographic-description pb-[0.58px]">
+                                    Melatonin rises. Fat storage enzymes activate.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Section - Mid-Article CTA: Calorie Calculator -->
+                    <div class="relative col px-12 pt-[103.7px] md:pt-11.75 pb-18 rounded-3xl bg-twelfth shadow-lg mb-[23.1px] md:mb-[79.29px]">
+                        <div class="col gap-[7.1px]">
+                            <h3 class="pb-[0.59px] text-white">
+                                Optimize Your Intake
+                            </h3>
+                            <p class="text-[16px] leading-[27.2px] text-white/80">
+                                Use our science-backed tool to estimate your daily energy needs based on your activity and metabolic goals.
+                            </p>
+                            <form class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-[16.89px]">
+                                <div class="col gap-[6.5px] pt-[5.5px]">
+                                    <label for="weight" class="text-[12px] leading-4 font-bold text-white opacity-80 uppercase">
+                                        weight (kg)
+                                    </label>
+                                    <input type="number" name="weight" id="weight" class="p-2.25 rounded-lg border border-white/20 bg-white/10 text-white placeholder:text-white/40 focus:ring-2 focus:ring-white/50 focus:border-sixteenth outline-none" placeholder="70">
+                                </div>
+                                <div class="col gap-[6.5px] pt-[5.5px]">
+                                    <label for="activityLevel" class="text-[12px] leading-4 font-bold text-white opacity-80 uppercase">
+                                        activity level
+                                    </label>
+                                    <div class="relative">
+                                        <select name="activityLevel" id="activityLevel" class="w-full p-2 appearance-none rounded-lg text-white border border-white/20 bg-white/10 focus:border-sixteenth outline-none">
+                                            <option class="text-eleventh" value="Sedentary" selected>Sedentary</option>
+                                            <option class="text-eleventh" value="Moderate">Moderate</option>
+                                            <option class="text-eleventh" value="Highly Active">Highly Active</option>
+                                        </select>
+                                        <div class="absolute right-2.25 top-1/2 pointer-events-none">
+                                            <img src="./assets/imgs/article_detail_images/article_body_section/Vector.svg" alt="Vector icon">
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="mt-7.5 py-2 rounded-lg bg-sixth text-[16px] leading-6 font-bold text-center text-white shadow-md hover:bg-fourtyOne transition-colors">
+                                    CALCULATE
+                                </button>
+                            </form>
+                            <p class="pt-[16.9px] text-[10px] leading-4.25 italic text-center text-white opacity-60">
+                                Calculations based on the Mifflin-St Jeor Equation.
+                            </p>
+                        </div>
+                        <div class="absolute -right-10 -bottom-10 w-40 h-40 rounded-full bg-white/10 blur-2xl"></div>
+                    </div>
+                    <h3 class="pb-[0.59px] text-eleventh pt-[55.69px] md:pt-0 mb-[23.1px] md:mb-[23.09px]">
+                        Practical Guidelines for Synchronization
+                    </h3>
+                    <p class="text-[16px] leading-[27.2px] text-eleventh mb-[23.1px] md:mb-[24.29px]">
+                        Implementing circadian nutrition doesn't require a radical overhaul of your diet. Start with these three foundational habits:
+                    </p>
+                    <ul class="col gap-6 mb-[23.1px] md:mb-20">
+                        <li class="flex gap-6">
+                            <span class="list-number">
+                                1
+                            </span>
+                            <div>
+                                <p class="list-name">
+                                    The 12-Hour Reset
+                                </p>
+                                <p class="list-description">
+                                    Aim for a minimum of 12 hours between your last meal of the day and your first meal of the next. This allows for vital metabolic cleaning (autophagy).
+                                </p>
+                            </div>
+                        </li>
+                        <li class="flex gap-6">
+                            <span class="list-number">
+                                2
+                            </span>
+                            <div>
+                                <p class="list-name">
+                                    The Front-Loading Principle
+                                </p>
+                                <p class="list-description">
+                                    Consume 70% of your calories before 3:00 PM. This aligns with your body's peak insulin sensitivity.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="flex gap-6">
+                            <span class="list-number">
+                                3
+                            </span>
+                            <div>
+                                <p class="list-name">
+                                    Consistency Over Perfection
+                                </p>
+                                <p class="list-description">
+                                    Try to eat at the same times each day. Predictability helps anchor your internal clocks.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- Section - Author Card -->
+                    <div class="col md:flex-row gap-12 p-12 pt-[104.9px] md:p-12 rounded-3xl border border-fifth/5 bg-white shadow-xs">
+                        <div class="mx-auto rounded-full w-24 h-24 border-2 border-third/10 overflow-hidden shrink-0">
+                            <img src="./assets/imgs/article_detail_images/article_body_section/author.webp" alt="author image">
+                        </div>
+                        <div>
+                            <h3 class="pb-[0.59px] text-eleventh mb-1.75">About the Author</h3>
+                            <p class="text-[16px] leading-[27.2px] font-bold text-third mb-[23.38px]">Elena Vance, PhD</p>
+                            <p class="text-[14px] leading-[23.8px] text-nav-link mb-[23.99px]">
+                                Dr. Vance is a researcher and clinical nutritionist specializing in metabolic health and chronobiology. With over 15 years of experience at leading wellness institutes, she focuses on bridging the gap between clinical data and sustainable lifestyle practices.
+                            </p>
+                            <div class="row gap-4"> 
+                                <button class="article-author-button">
+                                    Follow
+                                </button>
+                                <button class="article-author-button">
+                                    Full Bio
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>

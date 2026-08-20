@@ -55,6 +55,7 @@
     --color-thirtyEight: #663B3D;
     --color-thirtyNineth: #002113;
     --color-fourty: #F1F5F9;
+    --color-fourtyOne: #e67e7e;
 
     --shadow-first: 0px 4px 20px rgba(51,65,85,0.05);
     --shadow-second: 0px 10px 30px rgba(51, 65, 85, 0.12);
@@ -552,7 +553,34 @@
 @utility article-table-content-link-active{
     @apply text-[14px] leading-5 font-semibold text-third ps-3 border-s-2 border-third hover:text-third transition-all
 }
+@utility infographic-card{
+    @apply col items-center gap-2 p-6 pb-12 md:p-6 rounded-2xl text-center bg-white shadow-xs
+}
+@utility infographic-name{
+    @apply text-[14px] leading-[23.8px] font-bold text-eleventh
+}
+@utility infographic-description{
+    @apply text-[12px] leading-[20.4px] text-nav-link pt-[15.19px] pb-[0.58px] md:p-0
+}
 /* end Aside - Sidebar: Table of Contents section */
+
+/* start article list section */
+@utility list-number{
+    @apply row justify-center rounded-full bg-third/10 w-8 h-8 text-[16px] leading-6 font-bold text-center text-third shrink-0
+}
+@utility list-name{
+    @apply text-[16px] leading-[27.2px] font-bold text-eleventh
+}
+@utility list-description{
+    @apply text-[14px] leading-[23.8px] text-nav-link
+}
+/* end article list section */
+
+/* start author button */
+@utility article-author-button{
+    @apply py-1 px-4 rounded-full border border-third text-[12px] leading-4 font-bold text-third text-center hover:bg-third/5 transition-colors
+}
+/* start author button */
 
 /* end Article detail page styles */
 
