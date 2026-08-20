@@ -8,6 +8,11 @@
       "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-300: oklch(80.8% 0.114 19.571);
+    --color-amber-400: oklch(82.8% 0.189 84.429);
+    --color-emerald-300: oklch(84.5% 0.143 164.978);
+    --color-blue-300: oklch(80.9% 0.105 251.813);
+    --color-purple-400: oklch(71.4% 0.203 305.504);
     --color-white: #FFFFFF;
     --spacing: 0.25rem;
     --container-md: 28rem;
@@ -2099,6 +2104,15 @@
     background-color: rgba(248, 249, 255, 0.7);
     backdrop-filter: blur(12px);
   }
+  .bg-amber-400 {
+    background-color: var(--color-amber-400);
+  }
+  .bg-blue-300 {
+    background-color: var(--color-blue-300);
+  }
+  .bg-emerald-300 {
+    background-color: var(--color-emerald-300);
+  }
   .bg-fifteenth {
     background-color: var(--color-fifteenth);
   }
@@ -2143,6 +2157,12 @@
     @supports (color: color-mix(in lab, red, red)) {
       background-color: color-mix(in oklab, var(--color-nineteenth) 30%, transparent);
     }
+  }
+  .bg-purple-400 {
+    background-color: var(--color-purple-400);
+  }
+  .bg-red-300 {
+    background-color: var(--color-red-300);
   }
   .bg-secondaryC {
     background-color: var(--color-secondaryC);
@@ -2448,6 +2468,9 @@
   }
   .px-\[21\.58px\] {
     padding-inline: 21.58px;
+  }
+  .px-\[24px\] {
+    padding-inline: 24px;
   }
   .px-\[32\.64px\] {
     padding-inline: 32.64px;
@@ -4117,6 +4140,9 @@
     }
     .lg\:col-span-3 {
       grid-column: span 3 / span 3;
+    }
+    .lg\:col-span-8 {
+      grid-column: span 8 / span 8;
     }
     .lg\:col-span-9 {
       grid-column: span 9 / span 9;
